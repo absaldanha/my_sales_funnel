@@ -13,6 +13,7 @@ gem "rails", "~> 5.2"
 group :development, :test do
   gem "byebug", "~> 10.0", platforms: %i[mri mingw x64_mingw]
   gem "dotenv-rails", "~> 2.5"
+  gem "pry-byebug", "~> 3.6"
 end
 
 group :development do
@@ -21,6 +22,7 @@ end
 
 group :test do
   gem "database_cleaner", "~> 1.7"
+  gem "json-schema", "~> 2.8"
   gem "rspec-rails", "~> 3.8"
   gem "rubocop", "~> 0.59"
   gem "shoulda-matchers", "~> 3.1"

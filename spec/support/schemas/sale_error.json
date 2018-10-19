@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "required": ["error"],
+  "additionalProperties": false,
+  "properties": {
+    "error": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

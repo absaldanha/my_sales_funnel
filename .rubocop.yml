@@ -17,3 +17,15 @@ Metrics/LineLength:
 
 Metrics/BlockLength:
   Enabled: false
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
+Layout/AlignHash:
+  Enabled: false

@@ -33,3 +33,990 @@
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:13:24 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:15:27 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:16:01 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:16:18 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:22:10 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:22:10 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:24:38 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:24:38 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:24:55 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:24:55 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:25:04 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:25:04 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:25:19 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:25:19 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:25:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:25:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:26:36 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:26:57 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:27:23 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:27:26 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:28:56 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:29:03 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:29:52 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:29:52 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:30:45 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:30:45 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:32:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:32:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:34:28 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:34:28 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:35:03 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:35:03 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:35:55 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:35:55 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:38:52 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:38:52 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:40:24 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:40:24 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:40:24 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:43:35 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:43:35 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36mSale Load (0.7ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:43:35 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>"10000"}}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:44:32 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+sale[title]=Sale+title&sale[client_name]=Foo&sale[value]=10000
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:44:32 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+sale[title]=Sale+title&sale[client_name]=Foo&sale[value]=10000
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:44:32 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+sale[title]=Sale+title&sale[client_name]=Foo&sale[value]=10000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:45:05 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:45:05 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:45:05 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+Completed 201 Created in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:46:28 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSale Create (0.8ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:46:28.382974"], ["updated_at", "2018-10-19 22:46:28.382974"]]
+  [1m[35m (29.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 34.8ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:46:28 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSale Create (0.8ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:46:28.421989"], ["updated_at", "2018-10-19 22:46:28.421989"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.2ms)
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:46:28 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSale Create (0.9ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:46:28.426720"], ["updated_at", "2018-10-19 22:46:28.426720"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:04 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (1.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:04.861687"], ["updated_at", "2018-10-19 22:48:04.861687"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 5.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:04 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.8ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:04.869229"], ["updated_at", "2018-10-19 22:48:04.869229"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:04 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.8ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:04.875228"], ["updated_at", "2018-10-19 22:48:04.875228"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (419.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_sales_funnel_test"[0m
+  [1m[35m (587.8ms)[0m  [1m[35mCREATE DATABASE "my_sales_funnel_test" ENCODING = 'unicode'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-10-19 22:48:30.936914"], ["updated_at", "2018-10-19 22:48:30.936914"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.9ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:31.028795"], ["updated_at", "2018-10-19 22:48:31.028795"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 6.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:31.041752"], ["updated_at", "2018-10-19 22:48:31.041752"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:31.051844"], ["updated_at", "2018-10-19 22:48:31.051844"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:35 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.8ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:36.017826"], ["updated_at", "2018-10-19 22:48:36.017826"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 6.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:36 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.5ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:36.032624"], ["updated_at", "2018-10-19 22:48:36.032624"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:36 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.5ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:36.046753"], ["updated_at", "2018-10-19 22:48:36.046753"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:46 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.5ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:46.718481"], ["updated_at", "2018-10-19 22:48:46.718481"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 19ms (Views: 0.1ms | ActiveRecord: 4.5ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:46 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:46.730245"], ["updated_at", "2018-10-19 22:48:46.730245"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:48:46 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:48:46.738256"], ["updated_at", "2018-10-19 22:48:46.738256"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:49:20 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.6ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:49:20.890728"], ["updated_at", "2018-10-19 22:49:20.890728"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 19ms (Views: 0.1ms | ActiveRecord: 4.5ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:49:20 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:49:20.902865"], ["updated_at", "2018-10-19 22:49:20.902865"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:49:20 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:49:20.909231"], ["updated_at", "2018-10-19 22:49:20.909231"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:49:54 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.6ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:49:54.278087"], ["updated_at", "2018-10-19 22:49:54.278087"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 12ms (Views: 0.1ms | ActiveRecord: 4.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:49:54 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:49:54.288599"], ["updated_at", "2018-10-19 22:49:54.288599"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:49:54 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:49:54.294471"], ["updated_at", "2018-10-19 22:49:54.294471"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:52:19 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.6ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:52:19.734396"], ["updated_at", "2018-10-19 22:52:19.734396"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 14ms (Views: 0.1ms | ActiveRecord: 4.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:52:19 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:52:19.744605"], ["updated_at", "2018-10-19 22:52:19.744605"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:52:19 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:52:19.754912"], ["updated_at", "2018-10-19 22:52:19.754912"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:52:19 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+sale[value]=-1&sale[title]=Title
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:52:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.6ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:52:31.363970"], ["updated_at", "2018-10-19 22:52:31.363970"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 21ms (Views: 0.1ms | ActiveRecord: 4.7ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:52:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:52:31.371719"], ["updated_at", "2018-10-19 22:52:31.371719"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:52:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:52:31.381334"], ["updated_at", "2018-10-19 22:52:31.381334"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:52:31 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 201 Created in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:53:22 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.6ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:53:22.072486"], ["updated_at", "2018-10-19 22:53:22.072486"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 21ms (Views: 0.1ms | ActiveRecord: 5.6ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:53:22 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:53:22.085369"], ["updated_at", "2018-10-19 22:53:22.085369"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:53:22 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 22:53:22.094148"], ["updated_at", "2018-10-19 22:53:22.094148"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:53:22 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 19:54:39 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 57895ms (Views: 0.2ms | ActiveRecord: 4.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:02:02 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.6ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:02:02.385847"], ["updated_at", "2018-10-19 23:02:02.385847"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 20ms (Views: 0.1ms | ActiveRecord: 4.7ms)
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:02:02 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:02:02.398480"], ["updated_at", "2018-10-19 23:02:02.398480"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:02:02 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:02:02.407172"], ["updated_at", "2018-10-19 23:02:02.407172"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:02:02 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 97778ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:03:40 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 1522ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:04:04 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 17ms (Views: 0.1ms | ActiveRecord: 4.2ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:04:53 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.7ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:04:53.508543"], ["updated_at", "2018-10-19 23:04:53.508543"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 16ms (Views: 0.1ms | ActiveRecord: 5.7ms)
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:04:53 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:04:53.522385"], ["updated_at", "2018-10-19 23:04:53.522385"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:04:53 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:04:53.531361"], ["updated_at", "2018-10-19 23:04:53.531361"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:04:53 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:04:53 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:05:30 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 18ms (Views: 0.1ms | ActiveRecord: 4.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:05:30 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "sales"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:05:30 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:05:30 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.5ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:05:30.456414"], ["updated_at", "2018-10-19 23:05:30.456414"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 4ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:05:30 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:05:30.464868"], ["updated_at", "2018-10-19 23:05:30.464868"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 4ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:05:30 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:05:30.474950"], ["updated_at", "2018-10-19 23:05:30.474950"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 4ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:06:43 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "sales"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:06:43 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:06:43 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:06:43 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.5ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:06:43.268586"], ["updated_at", "2018-10-19 23:06:43.268586"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 4ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+  [1m[36mSale Load (0.2ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:06:43 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:06:43.279267"], ["updated_at", "2018-10-19 23:06:43.279267"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:06:43 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:06:43.289409"], ["updated_at", "2018-10-19 23:06:43.289409"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:09:11 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.5ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:09:11.179703"], ["updated_at", "2018-10-19 23:09:11.179703"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 4ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:09:11 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.6ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:09:11.190424"], ["updated_at", "2018-10-19 23:09:11.190424"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 4ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:09:11 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-19 23:09:11.197522"], ["updated_at", "2018-10-19 23:09:11.197522"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:09:11 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:09:11 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-19 20:09:11 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "sales"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m

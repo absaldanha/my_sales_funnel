@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "required": ["title", "client_name", "value", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string" },
+    "client_name": { "type": "string" },
+    "value": { "type": "integer" },
+    "status": { "type": "string" }
+  }
+}
