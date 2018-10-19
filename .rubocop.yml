@@ -2,7 +2,7 @@ AllCops:
   TargetRubyVersion: 2.5.1
   Exclude:
     - bin/*
-    - db/*
+    - db/**/*
     - vendor/**/*
     - vendor/**/.*
 
