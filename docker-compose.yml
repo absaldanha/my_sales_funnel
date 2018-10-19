@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:9.6.6
+    ports:
+      - "5433:5432"
+    logging:
+      driver: "none"
+
+  app:
+    build: .
+    command: "foreman start"
+    volumes:
+      - .:/app
+      - gems:/bundle
+    ports:
+      - "0.0.0.0:3000:3000"
+    links:
+      - db
+    depends_on:
+      - db
+
+volumes:
+  gems:
