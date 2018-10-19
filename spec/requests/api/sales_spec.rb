@@ -1,6 +1,20 @@
 # frozen_string_literal: true
 
 RSpec.describe "Sales API" do
+  describe "GET /api/sales" do
+    it "responds with a 200 HTTP status" do
+      get "/api/sales", headers: { "Content-Type" => "application/json" }
+
+      expect(response).to have_http_status :ok
+    end
+
+    it "responds with the correct sales JSON" do
+      get "/api/sales", headers: { "Content-Type" => "application/json" }
+
+      expect(json_response).to match_json_schema(:sale_collection)
+    end
+  end
+
   describe "POST /api/sales" do
     context "when created successfully" do
       let(:correct_params) do
