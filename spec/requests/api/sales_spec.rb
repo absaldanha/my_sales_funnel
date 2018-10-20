@@ -38,6 +38,12 @@ RSpec.describe "Sales API" do
           title: "Sale title", client_name: "Foo", value: 100_00, status: "contact"
         )
       end
+
+      it "creates a new sale log for the created sale" do
+        post "/api/sales", params: correct_params, headers: { "Content-Type" => "application/json" }
+
+        expect(Sale.first.logs.first).to have_attributes(status: "contact")
+      end
     end
 
     context "when created unsuccessfully" do
@@ -65,6 +71,13 @@ RSpec.describe "Sales API" do
 
         expect(Sale.count).to eq 0
       end
+
+      it "doesn't log the sale creation" do
+        post "/api/sales", params: incorrect_params,
+          headers: { "Content-Type" => "application/json" }
+
+        expect(SaleLog.count).to eq 0
+      end
     end
   end
 
@@ -75,6 +88,7 @@ RSpec.describe "Sales API" do
       end
 
       let!(:sale) { create(:sale, title: "Title", client_name: "Client", value: 100_00) }
+      let!(:sale_log) { create(:sale_log, sale: sale, status: sale.status) }
 
       it "responds with a 200 HTTP status" do
         patch "/api/sales/#{sale.id}", params: correct_params,
@@ -97,6 +111,13 @@ RSpec.describe "Sales API" do
         expect(Sale.first).to have_attributes(
           title: "Other Title", value: 200_00, status: "contact", client_name: "Client"
         )
+      end
+
+      it "creates a new log if status was updated" do
+        patch "/api/sales/#{sale.id}", params: correct_params,
+          headers: { "Content-Type" => "application/json" }
+
+        expect(sale.logs.count).to eq 1
       end
     end
 

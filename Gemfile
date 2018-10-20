@@ -9,6 +9,7 @@ gem "pg", "~> 1.1"
 gem "puma", "~> 3.12"
 gem "rack-cors", "~> 1.0"
 gem "rails", "~> 5.2"
+gem "wisper", "~> 2.0"
 
 group :development, :test do
   gem "byebug", "~> 10.0", platforms: %i[mri mingw x64_mingw]
@@ -29,4 +30,5 @@ group :test do
   gem "rubocop", "~> 0.59"
   gem "shoulda-matchers", "~> 3.1"
   gem "simplecov", "~> 0.16"
+  gem "timecop", "~> 0.9"
 end

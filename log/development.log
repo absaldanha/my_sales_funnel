@@ -110,3 +110,57 @@ Migrating to CreateSales (20181019211933)
   ↳ bin/rails:6
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4219477107671700525)[0m
+  ↳ bin/rails:6
+  [1m[35m (15.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:6
+Migrating to CreateSaleLogs (20181020180748)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:6
+  [1m[35m (211.5ms)[0m  [1m[35mCREATE TABLE "sale_logs" ("id" bigserial primary key, "sale_id" bigint, "status" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_4440c8e79f"
+FOREIGN KEY ("sale_id")
+  REFERENCES "sales" ("id")
+)[0m
+  ↳ db/migrate/20181020180748_create_sale_logs.rb:3
+  [1m[35m (46.4ms)[0m  [1m[35mCREATE  INDEX  "index_sale_logs_on_sale_id" ON "sale_logs"  ("sale_id")[0m
+  ↳ db/migrate/20181020180748_create_sale_logs.rb:3
+  [1m[35m (43.3ms)[0m  [1m[35mCREATE  INDEX  "index_sale_logs_on_status" ON "sale_logs"  ("status")[0m
+  ↳ db/migrate/20181020180748_create_sale_logs.rb:3
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_sale_logs_on_status_and_sale" ON "sale_logs"  ("status", "sale")[0m
+  ↳ db/migrate/20181020180748_create_sale_logs.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4219477107671700525)[0m
+  ↳ bin/rails:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4219477107671700525)[0m
+  ↳ bin/rails:6
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:6
+Migrating to CreateSaleLogs (20181020180748)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:6
+  [1m[35m (164.8ms)[0m  [1m[35mCREATE TABLE "sale_logs" ("id" bigserial primary key, "sale_id" bigint, "status" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_4440c8e79f"
+FOREIGN KEY ("sale_id")
+  REFERENCES "sales" ("id")
+)[0m
+  ↳ db/migrate/20181020180748_create_sale_logs.rb:3
+  [1m[35m (51.6ms)[0m  [1m[35mCREATE  INDEX  "index_sale_logs_on_sale_id" ON "sale_logs"  ("sale_id")[0m
+  ↳ db/migrate/20181020180748_create_sale_logs.rb:3
+  [1m[35m (53.5ms)[0m  [1m[35mCREATE  INDEX  "index_sale_logs_on_status" ON "sale_logs"  ("status")[0m
+  ↳ db/migrate/20181020180748_create_sale_logs.rb:3
+  [1m[35m (53.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_sale_logs_on_status_and_sale_id" ON "sale_logs"  ("status", "sale_id")[0m
+  ↳ db/migrate/20181020180748_create_sale_logs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181020180748"]]
+  ↳ bin/rails:6
+  [1m[35m (15.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:6
+  [1m[36mActiveRecord::InternalMetadata Load (12.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4219477107671700525)[0m
+  ↳ bin/rails:6
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:6

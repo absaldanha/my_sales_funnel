@@ -2,7 +2,10 @@
 
 RSpec.describe Sale do
   describe "validations" do
+    subject { create(:sale) }
+
     it { is_expected.to validate_presence_of(:title) }
+    it { is_expected.to validate_uniqueness_of(:title) }
     it { is_expected.to validate_presence_of(:client_name) }
     it { is_expected.to validate_presence_of(:value) }
     it { is_expected.to validate_numericality_of(:value).is_greater_than_or_equal_to(0) }
@@ -19,5 +22,9 @@ RSpec.describe Sale do
         expect(invalid_sale).to be_invalid
       end
     end
+  end
+
+  describe "associations" do
+    it { is_expected.to have_many(:logs).class_name("SaleLog") }
   end
 end

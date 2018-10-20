@@ -39,6 +39,38 @@ CREATE TABLE public.ar_internal_metadata (
 
 
 --
+-- Name: sale_logs; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.sale_logs (
+    id bigint NOT NULL,
+    sale_id bigint,
+    status character varying NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+--
+-- Name: sale_logs_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.sale_logs_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: sale_logs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.sale_logs_id_seq OWNED BY public.sale_logs.id;
+
+
+--
 -- Name: sales; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -83,6 +115,13 @@ CREATE TABLE public.schema_migrations (
 
 
 --
+-- Name: sale_logs id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.sale_logs ALTER COLUMN id SET DEFAULT nextval('public.sale_logs_id_seq'::regclass);
+
+
+--
 -- Name: sales id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -95,6 +134,14 @@ ALTER TABLE ONLY public.sales ALTER COLUMN id SET DEFAULT nextval('public.sales_
 
 ALTER TABLE ONLY public.ar_internal_metadata
     ADD CONSTRAINT ar_internal_metadata_pkey PRIMARY KEY (key);
+
+
+--
+-- Name: sale_logs sale_logs_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.sale_logs
+    ADD CONSTRAINT sale_logs_pkey PRIMARY KEY (id);
 
 
 --
@@ -114,6 +161,27 @@ ALTER TABLE ONLY public.schema_migrations
 
 
 --
+-- Name: index_sale_logs_on_sale_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_sale_logs_on_sale_id ON public.sale_logs USING btree (sale_id);
+
+
+--
+-- Name: index_sale_logs_on_status; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_sale_logs_on_status ON public.sale_logs USING btree (status);
+
+
+--
+-- Name: index_sale_logs_on_status_and_sale_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX index_sale_logs_on_status_and_sale_id ON public.sale_logs USING btree (status, sale_id);
+
+
+--
 -- Name: index_sales_on_client_name; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -128,12 +196,21 @@ CREATE UNIQUE INDEX index_sales_on_title ON public.sales USING btree (title);
 
 
 --
+-- Name: sale_logs fk_rails_4440c8e79f; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.sale_logs
+    ADD CONSTRAINT fk_rails_4440c8e79f FOREIGN KEY (sale_id) REFERENCES public.sales(id);
+
+
+--
 -- PostgreSQL database dump complete
 --
 
 SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
-('20181019211933');
+('20181019211933'),
+('20181020180748');
 
 

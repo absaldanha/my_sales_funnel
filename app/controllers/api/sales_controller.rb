@@ -2,6 +2,8 @@
 
 module API
   class SalesController < ApplicationController
+    include Wisper::Publisher
+
     def index
       sales = Sale.all
       render json: json_for(sales), status: :ok
@@ -11,6 +13,7 @@ module API
       sale = Sale.new(sale_params)
 
       if sale.save
+        publish(:sale_modified, sale)
         render json: json_for(sale), status: :created
       else
         render json: errors_for(sale), status: :unprocessable_entity
@@ -21,6 +24,7 @@ module API
       sale = Sale.find(params[:id])
 
       if sale.update(sale_params)
+        # broadcast(:sale_modified, sale)
         render json: json_for(sale), status: :ok
       else
         render json: errors_for(sale), status: :unprocessable_entity
