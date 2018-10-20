@@ -30,7 +30,7 @@ module API
     private
 
     def sale_params
-      params.require(:sale).permit(:title, :client_name, :value)
+      params.require(:sale).permit(:title, :client_name, :value, :status)
     end
 
     def json_for(sale)

@@ -5,6 +5,8 @@ if ENV["COVERAGE"]
 
   SimpleCov.start :rails do
     minimum_coverage 95
+
+    add_group "Validators", "app/validators"
   end
 end
 

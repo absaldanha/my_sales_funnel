@@ -3,6 +3,7 @@
 class Sale < ApplicationRecord
   validates :title, :client_name, :value, presence: true
   validates :value, numericality: { greater_than_or_equal_to: 0 }
+  validates :status, status: true
 
   enum status: {
     contact: "contact",

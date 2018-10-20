@@ -2,6 +2,10 @@
 
 Rails.application.routes.draw do
   namespace :api do
-    resources :sales, only: %i[index create update]
+    resources :sales, only: %i[index create update] do
+      scope module: :sales do
+        resource :status, only: :update
+      end
+    end
   end
 end

@@ -6,5 +6,13 @@ FactoryBot.define do
     client_name { Faker::Company.name }
     value { Faker::Number.number(7) }
     status { "contact" }
+
+    trait :follow_up do
+      status { "follow_up" }
+    end
+
+    trait :won do
+      status { "won" }
+    end
   end
 end
