@@ -4,24 +4,41 @@ module API
   class SalesController < ApplicationController
     def index
       sales = Sale.all
-      render json: sales.to_json(except: %i[created_at updated_at]), status: :ok
+      render json: json_for(sales), status: :ok
     end
 
     def create
-      sale = Sale.new(create_params)
+      sale = Sale.new(sale_params)
 
       if sale.save
-        sale.save
-        render json: sale.to_json(except: %i[created_at updated_at]), status: :created
+        render json: json_for(sale), status: :created
       else
-        render json: { error: sale.errors.full_messages }.to_json, status: :unprocessable_entity
+        render json: errors_for(sale), status: :unprocessable_entity
+      end
+    end
+
+    def update
+      sale = Sale.find(params[:id])
+
+      if sale.update(sale_params)
+        render json: json_for(sale), status: :ok
+      else
+        render json: errors_for(sale), status: :unprocessable_entity
       end
     end
 
     private
 
-    def create_params
+    def sale_params
       params.require(:sale).permit(:title, :client_name, :value)
+    end
+
+    def json_for(sale)
+      sale.to_json(except: %i[created_at updated_at])
+    end
+
+    def errors_for(sale)
+      { error: sale.errors.full_messages }.to_json
     end
   end
 end

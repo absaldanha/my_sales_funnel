@@ -2,6 +2,6 @@
 
 Rails.application.routes.draw do
   namespace :api do
-    resources :sales, only: %i[create index]
+    resources :sales, only: %i[index create update]
   end
 end

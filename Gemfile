@@ -22,6 +22,8 @@ end
 
 group :test do
   gem "database_cleaner", "~> 1.7"
+  gem "factory_bot_rails", "~> 4.11"
+  gem "faker", "~> 1.9"
   gem "json-schema", "~> 2.8"
   gem "rspec-rails", "~> 3.8"
   gem "rubocop", "~> 0.59"
