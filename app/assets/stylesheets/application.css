@@ -13,3 +13,113 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+   background-color: #E6E6E6;
+ }
+
+ .button {
+   border-radius: 6px;
+   border-color: transparent;
+   background-color: #417DE3;
+   color: white;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 25px;
+   font-size: 14px;
+ }
+
+ .button img {
+   height: 20px;
+   width: 20px;
+   padding-right: 12px;
+   vertical-align: middle;
+ }
+
+ .columnContainer {
+   display: flex;
+   flex-wrap: nowrap;
+   margin-top: 20px;
+ }
+
+ .column {
+   flex: 0 0 220px;
+   margin-right: 5px;
+ }
+
+ .column h3, h4 {
+   margin: 0;
+ }
+
+ .column .columnName {
+   background-color: #6178A8;
+   color: white;
+   padding: 10px;
+   font-style: italic;
+ }
+
+ .column .columnStats {
+   background-color: #556992;
+   color: white;
+   padding: 8px;
+ }
+
+ .column .columnStats .totalValue {
+   display: inline-block;
+   font-style: italic;
+ }
+
+ .column .columnStats .totalSales {
+   float: right;
+ }
+
+ .columnGreen .columnName {
+  background-color: #53B55D;
+}
+
+.columnGreen .columnStats {
+  background-color: #459D52;
+}
+
+.columnRed .columnName {
+  background-color: #AF5659;
+}
+
+.columnRed .columnStats {
+  background-color: #904143;
+}
+
+.sale {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flow-root;
+  color: dimgray;
+}
+
+.sale .saleTitle {
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+}
+
+.sale .client {
+  font-size: 14px;
+  padding-left: 8px;
+  padding-top: 6px;
+}
+
+.sale .client img {
+  height: 15px;
+  width: 15px;
+  padding-right: 5px;
+}
+
+.sale .saleValue {
+  color: green;
+  float: right;
+  padding: 7px;
+  font-size: 12px;
+}

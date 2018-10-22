@@ -16,19 +16,24 @@ class Board extends React.Component {
     return(
       <div>
         <NewSaleButton />
-        {this.boardColumn("Contato", "contact")}
-        {this.boardColumn("Envio de proposta", "proposal_submission")}
-        {this.boardColumn("Follow-up", "follow_up")}
-        {this.boardColumn("Fechamento", "closing")}
-        {this.boardColumn("Ganhos", "won")}
-        {this.boardColumn("Perdidos", "lost")}
+        <div className={"columnContainer"}>
+          {this.boardColumn("Contato", "contact")}
+          {this.boardColumn("Envio de proposta", "proposal_submission")}
+          {this.boardColumn("Follow-up", "follow_up")}
+          {this.boardColumn("Fechamento", "closing")}
+          {this.boardColumn("Ganhos", "won", "columnGreen")}
+          {this.boardColumn("Perdidos", "lost", "columnRed")}
+        </div>
       </div>
     )
   }
 
-  boardColumn(columnName, status) {
+  boardColumn(columnName, status, columnClass = "") {
     return(
-      <Column name={columnName} sales={this.state.sales.filter((sale) => sale.status === status)} />
+      <Column
+        name={columnName} column_class={columnClass}
+        sales={this.state.sales.filter((sale) => sale.status === status)}
+      />
     )
   }
 }

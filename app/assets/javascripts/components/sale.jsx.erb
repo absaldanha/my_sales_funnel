@@ -1,0 +1,19 @@
+class Sale extends React.Component {
+  render() {
+    return(
+      <div className={"sale"}>
+        <div className={"saleTitle"}>{this.props.sale.title}</div>
+        <div className={"client"}>
+          <%= image_tag("company_image.png") %>
+          {this.props.sale.client_name}
+        </div>
+        <div className={"saleValue"}>{this.moneyValue()}</div>
+      </div>
+    )
+  }
+
+  moneyValue() {
+    value = this.props.sale.value / 100
+    return(value.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}))
+  }
+}
