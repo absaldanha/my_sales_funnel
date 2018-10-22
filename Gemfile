@@ -9,6 +9,7 @@ gem "pg", "~> 1.1"
 gem "puma", "~> 3.12"
 gem "rack-cors", "~> 1.0"
 gem "rails", "~> 5.2"
+gem "react-rails", "~> 2.4"
 gem "wisper", "~> 2.0"
 
 group :development, :test do

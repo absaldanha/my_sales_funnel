@@ -164,3 +164,1704 @@ FOREIGN KEY ("sale_id")
   ↳ bin/rails:6
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:6
+Started GET "/api/sales" for 172.26.0.1 at 2018-10-21 21:50:16 -0300
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by API::SalesController#index as HTML
+  [1m[36mSale Load (53.2ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 93ms (Views: 0.3ms | ActiveRecord: 70.5ms)
+
+
+Started GET "/favicon.ico" for 172.26.0.1 at 2018-10-21 21:50:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/favicon.ico" for 172.26.0.1 at 2018-10-21 21:50:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 172.26.0.1 at 2018-10-21 21:50:29 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (0.6ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 21:51:39 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (1.3ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 21:52:03 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (1.0ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 21:52:41 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (0.6ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 172.26.0.1 at 2018-10-21 21:52:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:01:07 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+    4:     <title>My Sales Funnel</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2297630506835354293_69934218983860'
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:02:02 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+    4:     <title>My Sales Funnel</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2297630506835354293_69934180886620'
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:02:24 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2811ms (Views: 2810.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-8e5021a84848204ad944852f9bf318290d010f2782df2e1339c92d45098477d1.js" for 172.26.0.1 at 2018-10-21 22:02:27 -0300
+Started GET "/assets/application-f0d704deea029cf000697e2c0181ec173a1b474645466ed843eb5ee7bb215794.css" for 172.26.0.1 at 2018-10-21 22:02:27 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:07:35 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1647ms (Views: 1646.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-95a0c1e2e4b51dccdea889583963c5875019416a93280e5f3c00284ed9b4396f.js" for 172.26.0.1 at 2018-10-21 22:07:36 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:10:14 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 916ms (Views: 915.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-e402bcc064a4ff3f9b05684281728b6833934e756b43ff2d9474e940106523b3.js" for 172.26.0.1 at 2018-10-21 22:10:15 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:10:32 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 911ms (Views: 909.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-a69c88a39476e8bfb0d1c1b82c0e4f64943d8bc2eca59bcc586db5d27e5c8735.js" for 172.26.0.1 at 2018-10-21 22:10:33 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSale Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Serviço de manutenção Pro"], ["LIMIT", 1]]
+  [1m[36mSale Create (20.2ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Serviço de manutenção Pro"], ["client_name", "Nestlé Alimentos"], ["value", 500000], ["created_at", "2018-10-22 01:12:18.011189"], ["updated_at", "2018-10-22 01:12:18.011189"]]
+  [1m[35m (9.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSale Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Venda de máquina XPZ500"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.7ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Venda de máquina XPZ500"], ["client_name", "ABC Industria Ltda"], ["value", 1000000], ["created_at", "2018-10-22 01:12:53.376467"], ["updated_at", "2018-10-22 01:12:53.376467"]]
+  [1m[35m (42.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSale Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "9824 - Máquina Multi Impressão"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.9ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "9824 - Máquina Multi Impressão"], ["client_name", "UP Industria"], ["value", 750000], ["created_at", "2018-10-22 01:13:28.545373"], ["updated_at", "2018-10-22 01:13:28.545373"]]
+  [1m[35m (29.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSale Load (1.0ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSale Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "9824 - Máquina Multi Impressão"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mSale Update (19.5ms)[0m  [1m[33mUPDATE "sales" SET "status" = $1, "updated_at" = $2 WHERE "sales"."id" = $3[0m  [["status", "proposal_submission"], ["updated_at", "2018-10-22 01:13:48.378093"], ["id", 3]]
+  [1m[35m (14.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSale Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "721 - Extrusora AP Compact"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.5ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "721 - Extrusora AP Compact"], ["client_name", "UP Industria"], ["value", 850000], ["status", "closing"], ["created_at", "2018-10-22 01:14:44.375296"], ["updated_at", "2018-10-22 01:14:44.375296"]]
+  [1m[35m (18.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:18:03 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 942ms (Views: 940.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7db797ed6c0b4b7e0ba819dda7a17281a62b29a1e11a851e10d087f3e0a6ba44.js" for 172.26.0.1 at 2018-10-21 22:18:04 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:18:05 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.8ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 6.1ms)
+
+
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSale Load (1.3ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  [1m[36mSale Load (1.0ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:20:36 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 937ms (Views: 935.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-c836f8ddc655549c29045be9a69a161c6613459004d56b81604da3a469cb53a9.js" for 172.26.0.1 at 2018-10-21 22:20:37 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:20:37 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:20:52 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 918ms (Views: 917.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-217c933b614742e7671faa05f8836a5305f3d87612ec35e6ec17703350d1219a.js" for 172.26.0.1 at 2018-10-21 22:20:52 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:20:53 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:21:50 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 903ms (Views: 902.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-edc49023b3e440efaa0d18b51da6dddab2953dc9006a68e14963639b19b51327.js" for 172.26.0.1 at 2018-10-21 22:21:51 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:21:51 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:23:17 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 912ms (Views: 910.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:23:18 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:27:40 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 897ms (Views: 896.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-1e40de45785636647816efe1ef6c66878716644d133c9179838ed9a79e2e60d3.js" for 172.26.0.1 at 2018-10-21 22:27:41 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:27:41 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:35:27 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1680ms (Views: 1679.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ede31394f28fbe162dccfbd828ec0cf0e0dcab658e508303bb9211c9f852b368.js" for 172.26.0.1 at 2018-10-21 22:35:29 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:38:09 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1667ms (Views: 1665.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-0f8f961bbac6c95ce74711927269c6d5e9065630651f975c4541855acc97fd79.js" for 172.26.0.1 at 2018-10-21 22:38:11 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:38:11 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (1.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:38:43 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 875ms (Views: 874.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-e841626cb3d573c9e95b46678d7c781c62bbce4083e5c3086f763c63b5f1d203.js" for 172.26.0.1 at 2018-10-21 22:38:44 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:38:44 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:38:53 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 888ms (Views: 886.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7ea3b5e256d91b83d34a5cc068433e8e8e7472c29ae05773e8b7a899cbe878b8.js" for 172.26.0.1 at 2018-10-21 22:38:54 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:38:54 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:39:41 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 941ms (Views: 939.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-192270e3146895cfbc5069fda3f40430675b2d0ebdddec20e7b0677656b6d95d.js" for 172.26.0.1 at 2018-10-21 22:39:42 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:39:43 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:43:04 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:43:04 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:43:06 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:43:06 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:43:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 945ms (Views: 944.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-dd01d703e3cf00f2a0da2c6f9039db1fee2452167ef2dae05aeab277cc3739cd.js" for 172.26.0.1 at 2018-10-21 22:43:19 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:43:20 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:46:10 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 684ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (23:12)
+  21 |           <h2>Sales</h2>
+  22 |           this.state.sales.map((sale) => {
+> 23 |             return(
+     |             ^
+  24 |               <p>{sale.title}</p>
+  25 |             )
+  26 |           })):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1179304480685583724_69916296367280'
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:47:43 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 909ms (Views: 908.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-79e2f6314e3aa7ff7345e68378fa3320855ac0d0025723879754baa06c3700e8.js" for 172.26.0.1 at 2018-10-21 22:47:44 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:49:09 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 1542ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (26:0)
+  24 | //   }
+  25 | // }
+> 26 | 
+     | ^):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1179304480685583724_69916162124720'
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:49:27 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 678ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (12:0)
+  10 |     )
+  11 |   }
+> 12 | 
+     | ^):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1179304480685583724_69916136787680'
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:49:48 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 901ms (Views: 900.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-f5d9228e22eb02155cd09d9a2145a7ba885f74b31cf4e9e1cbfb76b80ff83da7.js" for 172.26.0.1 at 2018-10-21 22:49:49 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:49:49 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:53:09 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1706ms (Views: 1704.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-66f7e2bf4ed187cc4d991f0e687c73962af43f335c40b9aec743b896ec09c4ce.js" for 172.26.0.1 at 2018-10-21 22:53:11 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:53:11 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (1.2ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:54:27 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 929ms (Views: 928.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-492f917b905a7b0fcf66e7ecfc07e5eb39d1bfd8e3a217fbc61f906bf2a6acd9.js" for 172.26.0.1 at 2018-10-21 22:54:28 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:54:44 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 913ms (Views: 911.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-82f4837f031f0bbf55b72d7354ccacba70aa98432600f3e548039338299175dd.js" for 172.26.0.1 at 2018-10-21 22:54:45 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:54:45 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.8ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:56:20 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 943ms (Views: 942.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-0eefeb45b4616ba698b3b2b2579c4ecc1d6c035af9cb2e208dd60e0ee3ec72c0.js" for 172.26.0.1 at 2018-10-21 22:56:21 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:56:21 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.8ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 29ms (Views: 0.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:56:46 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:56:46 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:58:15 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1672ms (Views: 1671.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-2dbf24defba32744dfccce7f3f2cdce00103e3401e69e9be1b63024d303dd98c.js" for 172.26.0.1 at 2018-10-21 22:58:16 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:58:16 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:58:25 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 945ms (Views: 943.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-c341ae89ce96e473cc2a1eb26955d394310e9a65bcc3cdd81835bde82929bf5c.js" for 172.26.0.1 at 2018-10-21 22:58:26 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:58:26 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.7ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 22:58:59 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 963ms (Views: 962.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-f55167e83027e6898c09b8d2126dcb939b082fa5d35cb57cfd2259d008219587.js" for 172.26.0.1 at 2018-10-21 22:59:00 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 22:59:00 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:09:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1708ms (Views: 1706.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d3199108025f4bb10f23c7ff085be90179219c65e5f1d7995837b586bb9f5d98.js" for 172.26.0.1 at 2018-10-21 23:09:18 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:09:18 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (1.0ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:14:01 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 954ms (Views: 953.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:14:02 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:20:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1695ms (Views: 1693.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5681dbe1e9b2e3a248cf3db280d99c4b6b6947fc033823cd4d7f126e544699a6.js" for 172.26.0.1 at 2018-10-21 23:20:13 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:20:13 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (1.0ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:20:39 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1006ms (Views: 1005.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ec36037a47282b43b4564fb65edb2ed2f5fda9c6cd5b2d7812c60be27f68db1d.js" for 172.26.0.1 at 2018-10-21 23:20:40 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:20:41 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:20:58 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 924ms (Views: 923.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-6fe80db05071aa458444303f6b83cfa839bfac86d94bca80e180900381959700.js" for 172.26.0.1 at 2018-10-21 23:20:59 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:20:59 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:21:42 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 934ms (Views: 933.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d29b8eb91b52c8f46f94b1e40477a7e4eb5477427a4f295fabf3decf3a35f084.js" for 172.26.0.1 at 2018-10-21 23:21:43 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:21:43 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:21:55 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 922ms (Views: 921.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4417d340f04a91155046a5a4f3f3c5782e1ea3cf5578d8d6e4ce7cce244aa913.js" for 172.26.0.1 at 2018-10-21 23:21:56 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:21:56 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:22:29 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 920ms (Views: 919.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-0c16ff88ee595d42b60a7fcc8205fd7d8413d81dc5d70ff94e1304452be32d92.js" for 172.26.0.1 at 2018-10-21 23:22:30 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:22:30 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.7ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:22:54 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 126ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-a08db9fb7bd9508abf26222add94f6566bf2cecd67f0422482b9a2a0ed5072b9.js" for 172.26.0.1 at 2018-10-21 23:22:54 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:22:54 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:29:15 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 943ms (Views: 942.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-e197f9ab0b6bbbf9a2a9d721d502835de7de4323644a8c58739557afb7cb876d.js" for 172.26.0.1 at 2018-10-21 23:29:16 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:29:16 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (1.1ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:35:59 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 917ms (Views: 916.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-cfdf14fbff761b2cef6409fda47b06c452b09aabb02be7345fcf8fa0ca50d7bd.js" for 172.26.0.1 at 2018-10-21 23:36:00 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:36:00 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.8ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:36:17 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 696ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (17:4)
+  15 |   render() {
+  16 |     console.log(this.state.sales.filter((sale) => sale.status === "contact")
+> 17 |     return(
+     |     ^
+  18 |       <div>
+  19 |         <h1>Board</h1>
+  20 |         <NewSaleButton />):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1179304480685583724_69916143505880'
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:36:43 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 934ms (Views: 933.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-46592aa4491c89ec3883c4b0f8a85783adf293af1016bb4b301682621de44421.js" for 172.26.0.1 at 2018-10-21 23:36:44 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:36:44 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:41:32 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 911ms (Views: 910.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-2e7fb643cbaa0034c026fa9f7e8a8ddd35dbd04be11261d53623061500cc99d1.js" for 172.26.0.1 at 2018-10-21 23:41:33 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:41:33 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:44:44 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 966ms (Views: 965.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-440dff75c86153216357e0c44db65e965c05a9159fc1007959e79a27f424a66a.js" for 172.26.0.1 at 2018-10-21 23:44:45 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:44:45 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:45:13 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 944ms (Views: 942.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7f23b3bab584e19ddd3cfa3fcdd7d334e82eed8950a9dce4fb5fe42058f91e99.js" for 172.26.0.1 at 2018-10-21 23:45:14 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:45:14 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:45:29 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 910ms (Views: 908.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-bf83cc08ae9f93ddf5f3d8a3db7bbefe23e66c965a1b8120787a014f217c1514.js" for 172.26.0.1 at 2018-10-21 23:45:30 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:45:30 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:45:41 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 907ms (Views: 906.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-eb7c9c2d2ea39d0ea01c0d620853ba63354e1ca8be4d0871dc9685321c39f1c7.js" for 172.26.0.1 at 2018-10-21 23:45:42 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:45:42 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:45:52 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 919ms (Views: 917.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-a79d6a9f1352c1635436d9d61b9fb26e227d08a8050237dfb97bf29cb03840f3.js" for 172.26.0.1 at 2018-10-21 23:45:53 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:45:54 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:51:24 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 1489ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (13:6)
+  11 |     return(
+  12 |       <h3>{this.name}</h3>
+> 13 |       this.state.sales.map((sale) => {
+     |       ^
+  14 |         return(
+  15 |           <div key={sale.id}>
+  16 |             <h4>{sale.title}</h4>):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1179304480685583724_69916296360120'
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:52:22 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 910ms (Views: 909.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-cca955d4430994004a610d75ddaf43d0b40c19e56c00e44c2e3d5ce203ab3b1d.js" for 172.26.0.1 at 2018-10-21 23:52:23 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:53:30 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 929ms (Views: 928.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5af78af29792c0147235c5ca70c16e1e61fbf9b35b1680813b7792cb77164888.js" for 172.26.0.1 at 2018-10-21 23:53:31 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:53:31 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:53:45 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 911ms (Views: 909.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-3b4a8c7496ab500970a2113700d9dd300f92f3f0fbd756eb7ba85b8abf33c2f5.js" for 172.26.0.1 at 2018-10-21 23:53:46 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:53:46 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.8ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:53:53 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 942ms (Views: 941.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b38f0e86ca6df3b4113f2d9c86df4aa886187e4167ba449ef170143abfce6f56.js" for 172.26.0.1 at 2018-10-21 23:53:54 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:53:54 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-21 23:55:32 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 930ms (Views: 929.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-6e66cedc1a6e0603f76c76683d7e3b674010cd412c01ff74622fd25e91d0e19e.js" for 172.26.0.1 at 2018-10-21 23:55:33 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-21 23:55:33 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.7ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 40ms (Views: 0.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:05:21 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1843ms (Views: 1842.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ff5b9ca874f19bbbc1fad83b1ceadb232bf5a18c5142870e51abb44eb9789154.js" for 172.26.0.1 at 2018-10-22 00:05:23 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:05:23 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.8ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 32ms (Views: 0.3ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:10:30 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 923ms (Views: 922.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ae344d03ab8cf440f3597470603e037f8ce1e851c049fdb0feb9d8be0591affe.js" for 172.26.0.1 at 2018-10-22 00:10:31 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:11:47 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 951ms (Views: 949.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b5b2b977a0186c407d8717bbf223451dde2b96f1df98170058125088e65798be.js" for 172.26.0.1 at 2018-10-22 00:11:48 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:12:08 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 945ms (Views: 944.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-15e83ce255c14d07d66c8dba1aa55834d1ddc3630e22985ecb197f7a7a903262.js" for 172.26.0.1 at 2018-10-22 00:12:09 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:12:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 950ms (Views: 948.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-2d067c7b00832c5f8246edb0bdf8e740d89b222f5d3fc73252aad6ba55adc93e.js" for 172.26.0.1 at 2018-10-22 00:12:19 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:12:43 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 975ms (Views: 974.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ba2d00be518e2f3ee0ac20c4de05a3f45de1eb84d53bb6cc19e235ca29ada239.js" for 172.26.0.1 at 2018-10-22 00:12:44 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:12:52 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 939ms (Views: 938.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-0a4ff2fc23948cd93656561d2b382e17f9cecb2a08e6fe1ff4f2bfa190ea3e5f.js" for 172.26.0.1 at 2018-10-22 00:12:53 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:12:53 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.9ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:13:36 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 1526ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Line 4: 'this' is not allowed before super()
+  2 |   constructor(props) {
+  3 |     // super(props);
+> 4 |     this.name = props.name
+    |     ^
+  5 |     this.state = {
+  6 |       sales: props.sales
+  7 |     }):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1179304480685583724_69916034403880'
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:13:54 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 123ms (Views: 121.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-f3bed20da5f1849fcae0b561720db7512746b3219b80f15ea86a1d0ddee3b69b.js" for 172.26.0.1 at 2018-10-22 00:13:54 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:13:54 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:14:30 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 907ms (Views: 906.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-43da01cface9461b7aff7a41adb093cf1a8982eeb74fa2e460b6ffd2c6bc1a91.js" for 172.26.0.1 at 2018-10-22 00:14:31 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:14:31 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:15:04 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 971ms (Views: 969.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-9590bae63347addf8937b4a2998ab087b137aee7c329142b4545ac2130409665.js" for 172.26.0.1 at 2018-10-22 00:15:05 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:15:06 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:18:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 917ms (Views: 915.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-9666772a82f84eb8983ac791f4bd9822901ca98a36a35b388271f0ef5862fb0d.js" for 172.26.0.1 at 2018-10-22 00:18:17 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:18:17 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:19:53 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 915ms (Views: 913.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4e0fa54344a7ab77f9c64a3d2038dad064f6d573ba0f9cd25238d31d0508ca6c.js" for 172.26.0.1 at 2018-10-22 00:19:54 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:19:54 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:27:10 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1703ms (Views: 1702.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-dca5e2126245c9a0f47713d4922780999fe70bef96658af7f8b5fdd2c29f15fe.js" for 172.26.0.1 at 2018-10-22 00:27:12 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:27:21 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 941ms (Views: 940.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d315852b92520694edd2e2a21aa52b61f285740eafc994c06081eab7a8494f3e.js" for 172.26.0.1 at 2018-10-22 00:27:22 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:27:22 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (1.2ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 26ms (Views: 0.3ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:36:07 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 924ms (Views: 923.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-17a515be8f1fb7adf3ee7ef8742977d675a85e6775a38733e1350b70b4006d0e.js" for 172.26.0.1 at 2018-10-22 00:36:08 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:36:19 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 916ms (Views: 915.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-a3a90b4181ccb7241168f808311890a80bffb19b6ed0e06ccf4c872d5cda14d2.js" for 172.26.0.1 at 2018-10-22 00:36:20 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:36:20 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (1.1ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:37:48 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 938ms (Views: 936.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7a518d7d8d4d48b625fb9cf99bb7b7d247068c6992d8d0226d03fe1f6717445f.js" for 172.26.0.1 at 2018-10-22 00:37:49 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:37:49 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:39:40 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 1443ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Adjacent JSX elements must be wrapped in an enclosing tag (4:4)
+  2 |   render() {
+  3 |     <p>{this.props.title}</p>
+> 4 |     <p>{this.props.client_name}</p>
+    |     ^
+  5 |     <p>R$ {this.props.value / 100.0}</p>
+  6 |   }
+  7 | }):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1179304480685583724_69916047031020'
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:40:13 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 926ms (Views: 925.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-f9a6e3748d8fcb196d6269b2ece3abba43c2fca604ad1f03afd52ed7eded00be.js" for 172.26.0.1 at 2018-10-22 00:40:14 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:40:14 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:40:33 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 923ms (Views: 921.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ae3f4c7f507a01df9d6559ca5c848ff65bafa9b5df168ce7d1b5e5c5979e6ecc.js" for 172.26.0.1 at 2018-10-22 00:40:34 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:40:35 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:41:42 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 133ms (Views: 131.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-e0712346a14ef61d1962bf04a6d6e799698337f415b8d7788615b9a3aa893e91.js" for 172.26.0.1 at 2018-10-22 00:41:42 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:41:42 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:42:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 924ms (Views: 922.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-3274a23a03715f8ab79de955580a2cc02ee32ca2a1dfac990549ddb65da668b2.js" for 172.26.0.1 at 2018-10-22 00:42:19 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:42:19 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:42:58 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 927ms (Views: 926.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-a52eaa87246252415fbe167fb4e831952a65c4b85e4de342f32ff33da326ca42.js" for 172.26.0.1 at 2018-10-22 00:42:59 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:42:59 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.8ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:45:53 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 952ms (Views: 951.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-928b92e91a5c570044a22ad27b9bbb80a4611fc0dfe98aeeeda3128fcd53e3fc.js" for 172.26.0.1 at 2018-10-22 00:45:54 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:45:54 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:46:55 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 907ms (Views: 906.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-66cdc9c197420804b30fa106a9493d09abd48aaacb79bc28946e31d83659e77a.js" for 172.26.0.1 at 2018-10-22 00:46:56 -0300
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:47:05 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 923ms (Views: 922.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fa59f6c37d208d96ab2df77ac9f755eedf51cd81e17474e690984246db26f38e.js" for 172.26.0.1 at 2018-10-22 00:47:06 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:47:06 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:52:43 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 718ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Line 3: 'this' is not allowed before super()
+  1 | class Column extends React.Component {
+  2 |   constructor (props) {
+> 3 |     this.name = props.name
+    |     ^
+  4 |     this.state = {
+  5 |       sales: props.sales.map((sale) => {
+  6 |         return():
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1179304480685583724_69916098334600'
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:52:56 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 958ms (Views: 957.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-221898d7096a058ea9534fdde13f076c29aeb7ff79a34a655e5dde7b3a2cecde.js" for 172.26.0.1 at 2018-10-22 00:52:57 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:52:58 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.8ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 37ms (Views: 0.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:53:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:53:18 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:53:20 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:53:20 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:54:48 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 911ms (Views: 910.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-08e95f7a5d7b079e54eabdd66de7b87c1b840c0ba51a24cc71e2225c0893e89d.js" for 172.26.0.1 at 2018-10-22 00:54:49 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:54:49 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:55:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 937ms (Views: 936.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-6d802a8c0933bb07b1ad04bce685e9f4cf751f49afeec9d0a583ab4c6df9063c.js" for 172.26.0.1 at 2018-10-22 00:55:12 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:55:12 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:56:37 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 902ms (Views: 901.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-e02ce8f41dc86b3b45bc32f274e7ed08e38407b4a7a902a249daa168b9236751.js" for 172.26.0.1 at 2018-10-22 00:56:38 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:56:38 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:56:56 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 911ms (Views: 910.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-090c38833b6e7667a3a88afefc6015e22a57833a7a6b2058af8df09c87ecb7e3.js" for 172.26.0.1 at 2018-10-22 00:56:57 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:56:57 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 00:57:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 908ms (Views: 906.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-f851ae82ed5aa1aa0e151c20fca0427902d70da58ce1b3e09c824fc15453f495.js" for 172.26.0.1 at 2018-10-22 00:57:19 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 00:57:19 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (1.0ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:01:54 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1673ms (Views: 1672.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5ab26077f349da6954659bafa8d3e83f4117336bfc787c1e604cd0f4a6fea922.js" for 172.26.0.1 at 2018-10-22 01:01:55 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:01:55 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:04:02 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 942ms (Views: 940.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-6c8ee3a88a11d16ee1921ef0d6c43ac1b883d4f89e9c55431447bc2701c368e1.js" for 172.26.0.1 at 2018-10-22 01:04:03 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:04:04 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:04:30 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 914ms (Views: 913.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ede6eab14daa07582fde2a044f7219a98e0e8c1213343db013014e5a88f960f0.js" for 172.26.0.1 at 2018-10-22 01:04:31 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:04:31 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:04:38 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 942ms (Views: 940.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-53327f14ba7bb833918b8d5215da1568721a99168e15019cdfeaed14878501c7.js" for 172.26.0.1 at 2018-10-22 01:04:39 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:04:39 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:05:04 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 954ms (Views: 953.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-9023e91a26f34cace63e53d6522789bad4bfbcbf936e7ec4133ad33fef61b476.js" for 172.26.0.1 at 2018-10-22 01:05:05 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:05:05 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:07:39 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 911ms (Views: 909.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-e4b2a171ddc6b5e85a4b180221808a62c81b3a3091bbbabf145ff54ecc6ee7c3.js" for 172.26.0.1 at 2018-10-22 01:07:40 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:07:40 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (1.1ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 6.3ms)
+
+
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSale Load (1.0ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSale Load (0.9ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:10:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 944ms (Views: 943.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-aad35e2e2430a18228fcc9798ce16cf30c5a3adda01d8a0115c584efea2cd806.js" for 172.26.0.1 at 2018-10-22 01:10:17 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:10:17 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (2.3ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:10:33 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 903ms (Views: 902.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-f3aed9687cac93306c72aa8e0391d95c12e62ffec177542766e4b93659f697bd.js" for 172.26.0.1 at 2018-10-22 01:10:34 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:10:34 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:11:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 911ms (Views: 910.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-90dc8423259d025411e72771683740a2b5c9ef4f4a0c088a3ac8143f255630f7.js" for 172.26.0.1 at 2018-10-22 01:11:12 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:11:12 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.7ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:12:25 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 900ms (Views: 898.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-cb92a31ddefdd25c4f2b06176a6706ea8fcd8a3bc6349ee04f71e7fb220ba229.js" for 172.26.0.1 at 2018-10-22 01:12:25 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:12:26 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.5ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:17:22 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1018ms (Views: 1017.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b15e9be525ee06732086067c1a8db6f01f89ea35b58df2926da460d7e0672c83.js" for 172.26.0.1 at 2018-10-22 01:17:23 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:17:23 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.6ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2018-10-22 01:17:37 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 934ms (Views: 933.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-3a7c31c4fc6895ad04a90b1de468abfc7c0d9eb9777adbb0381aa7f5603b36f9.js" for 172.26.0.1 at 2018-10-22 01:17:38 -0300
+Started GET "/api/sales.json" for 172.26.0.1 at 2018-10-22 01:17:38 -0300
+Processing by API::SalesController#index as JSON
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+  ↳ app/controllers/api/sales_controller.rb:41
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 3.9ms)
+
+

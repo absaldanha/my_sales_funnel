@@ -9903,3 +9903,425 @@ Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (37.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (30.1ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[36mSale Create (14.2ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Title"], ["client_name", "Client"], ["value", 10000], ["created_at", "2018-10-22 04:19:06.904915"], ["updated_at", "2018-10-22 04:19:06.904915"]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/api/sales/156" for 127.0.0.1 at 2018-10-22 01:19:06 -0300
+Processing by API::SalesController#update as HTML
+  Parameters: {"sale"=>{"title"=>"", "value"=>-1}, "id"=>"156"}
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 156], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", ""], ["id", 156], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 854ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Title"], ["client_name", "Client"], ["value", 10000], ["created_at", "2018-10-22 04:19:07.811603"], ["updated_at", "2018-10-22 04:19:07.811603"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/api/sales/157" for 127.0.0.1 at 2018-10-22 01:19:07 -0300
+Processing by API::SalesController#update as HTML
+  Parameters: {"sale"=>{"title"=>"", "value"=>-1}, "id"=>"157"}
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 157], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", ""], ["id", 157], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Title"], ["client_name", "Client"], ["value", 10000], ["created_at", "2018-10-22 04:19:07.824682"], ["updated_at", "2018-10-22 04:19:07.824682"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/api/sales/158" for 127.0.0.1 at 2018-10-22 01:19:07 -0300
+Processing by API::SalesController#update as HTML
+  Parameters: {"sale"=>{"title"=>"", "value"=>-1}, "id"=>"158"}
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 158], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", ""], ["id", 158], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Title"], ["client_name", "Client"], ["value", 10000], ["created_at", "2018-10-22 04:19:07.852627"], ["updated_at", "2018-10-22 04:19:07.852627"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Exists (43.2ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 159], ["LIMIT", 1]]
+  [1m[36mSaleLog Create (28.5ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 159], ["status", "contact"], ["created_at", "2018-10-22 04:19:07.924233"], ["updated_at", "2018-10-22 04:19:07.924233"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/api/sales/159" for 127.0.0.1 at 2018-10-22 01:19:07 -0300
+Processing by API::SalesController#update as HTML
+  Parameters: {"sale"=>{"title"=>"Other Title", "value"=>20000}, "id"=>"159"}
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 159], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Other Title"], ["id", 159], ["LIMIT", 1]]
+  [1m[36mSale Update (0.5ms)[0m  [1m[33mUPDATE "sales" SET "title" = $1, "value" = $2, "updated_at" = $3 WHERE "sales"."id" = $4[0m  [["title", "Other Title"], ["value", 20000], ["updated_at", "2018-10-22 04:19:07.958819"], ["id", 159]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Title"], ["client_name", "Client"], ["value", 10000], ["created_at", "2018-10-22 04:19:07.970312"], ["updated_at", "2018-10-22 04:19:07.970312"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 160], ["LIMIT", 1]]
+  [1m[36mSaleLog Create (0.5ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 160], ["status", "contact"], ["created_at", "2018-10-22 04:19:07.973978"], ["updated_at", "2018-10-22 04:19:07.973978"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/api/sales/160" for 127.0.0.1 at 2018-10-22 01:19:07 -0300
+Processing by API::SalesController#update as HTML
+  Parameters: {"sale"=>{"title"=>"Other Title", "value"=>20000}, "id"=>"160"}
+  [1m[36mSale Load (0.4ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 160], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Other Title"], ["id", 160], ["LIMIT", 1]]
+  [1m[36mSale Update (0.4ms)[0m  [1m[33mUPDATE "sales" SET "title" = $1, "value" = $2, "updated_at" = $3 WHERE "sales"."id" = $4[0m  [["title", "Other Title"], ["value", 20000], ["updated_at", "2018-10-22 04:19:07.979988"], ["id", 160]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Title"], ["client_name", "Client"], ["value", 10000], ["created_at", "2018-10-22 04:19:07.987641"], ["updated_at", "2018-10-22 04:19:07.987641"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 161], ["LIMIT", 1]]
+  [1m[36mSaleLog Create (0.5ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 161], ["status", "contact"], ["created_at", "2018-10-22 04:19:07.991321"], ["updated_at", "2018-10-22 04:19:07.991321"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/api/sales/161" for 127.0.0.1 at 2018-10-22 01:19:07 -0300
+Processing by API::SalesController#update as HTML
+  Parameters: {"sale"=>{"title"=>"Other Title", "value"=>20000}, "id"=>"161"}
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 161], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Other Title"], ["id", 161], ["LIMIT", 1]]
+  [1m[36mSale Update (0.4ms)[0m  [1m[33mUPDATE "sales" SET "title" = $1, "value" = $2, "updated_at" = $3 WHERE "sales"."id" = $4[0m  [["title", "Other Title"], ["value", 20000], ["updated_at", "2018-10-22 04:19:07.997935"], ["id", 161]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Title"], ["client_name", "Client"], ["value", 10000], ["created_at", "2018-10-22 04:19:08.004293"], ["updated_at", "2018-10-22 04:19:08.004293"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 162], ["LIMIT", 1]]
+  [1m[36mSaleLog Create (0.4ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 162], ["status", "contact"], ["created_at", "2018-10-22 04:19:08.007802"], ["updated_at", "2018-10-22 04:19:08.007802"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/api/sales/162" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#update as HTML
+  Parameters: {"sale"=>{"title"=>"Other Title", "value"=>20000}, "id"=>"162"}
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 162], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Other Title"], ["id", 162], ["LIMIT", 1]]
+  [1m[36mSale Update (0.4ms)[0m  [1m[33mUPDATE "sales" SET "title" = $1, "value" = $2, "updated_at" = $3 WHERE "sales"."id" = $4[0m  [["title", "Other Title"], ["value", 20000], ["updated_at", "2018-10-22 04:19:08.013503"], ["id", 162]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+  [1m[35m (18.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "sale_logs" WHERE "sale_logs"."sale_id" = $1[0m  [["sale_id", 162]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Sale title"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-22 04:19:08.085440"], ["updated_at", "2018-10-22 04:19:08.085440"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [0e31e809-3cd9-4ea6-9212-bd0936fc6d83] Performing SaleLogJob (Job ID: 0e31e809-3cd9-4ea6-9212-bd0936fc6d83) from Inline(default) with arguments: 163, "contact", "2018-10-22 01:19:08 -0300"
+[ActiveJob] [SaleLogJob] [0e31e809-3cd9-4ea6-9212-bd0936fc6d83]   [1m[36mSaleLog Load (0.5ms)[0m  [1m[34mSELECT  "sale_logs".* FROM "sale_logs" WHERE "sale_logs"."sale_id" = $1 AND "sale_logs"."status" = $2 LIMIT $3[0m  [["sale_id", 163], ["status", "contact"], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [0e31e809-3cd9-4ea6-9212-bd0936fc6d83]   [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [0e31e809-3cd9-4ea6-9212-bd0936fc6d83]   [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [0e31e809-3cd9-4ea6-9212-bd0936fc6d83]   [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 163], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [0e31e809-3cd9-4ea6-9212-bd0936fc6d83]   [1m[36mSaleLog Create (0.4ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 163], ["status", "contact"], ["created_at", "2018-10-22 04:19:08"], ["updated_at", "2018-10-22 04:19:08"]]
+[ActiveJob] [SaleLogJob] [0e31e809-3cd9-4ea6-9212-bd0936fc6d83]   [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [0e31e809-3cd9-4ea6-9212-bd0936fc6d83] Performed SaleLogJob (Job ID: 0e31e809-3cd9-4ea6-9212-bd0936fc6d83) from Inline(default) in 6.55ms
+[ActiveJob] Enqueued SaleLogJob (Job ID: 0e31e809-3cd9-4ea6-9212-bd0936fc6d83) to Inline(default) with arguments: 163, "contact", "2018-10-22 01:19:08 -0300"
+Completed 201 Created in 50ms (Views: 0.3ms | ActiveRecord: 3.2ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Sale title"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-22 04:19:08.140873"], ["updated_at", "2018-10-22 04:19:08.140873"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf] Performing SaleLogJob (Job ID: f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf) from Inline(default) with arguments: 164, "contact", "2018-10-22 01:19:08 -0300"
+[ActiveJob] [SaleLogJob] [f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf]   [1m[36mSaleLog Load (0.4ms)[0m  [1m[34mSELECT  "sale_logs".* FROM "sale_logs" WHERE "sale_logs"."sale_id" = $1 AND "sale_logs"."status" = $2 LIMIT $3[0m  [["sale_id", 164], ["status", "contact"], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf]   [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf]   [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 164], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf]   [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 164], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf]   [1m[36mSaleLog Create (0.5ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 164], ["status", "contact"], ["created_at", "2018-10-22 04:19:08"], ["updated_at", "2018-10-22 04:19:08"]]
+[ActiveJob] [SaleLogJob] [f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf]   [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf] Performed SaleLogJob (Job ID: f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf) from Inline(default) in 5.84ms
+[ActiveJob] Enqueued SaleLogJob (Job ID: f3dbe9fe-c84e-4a1c-b6ea-9a58060d89cf) to Inline(default) with arguments: 164, "contact", "2018-10-22 01:19:08 -0300"
+Completed 201 Created in 12ms (Views: 0.2ms | ActiveRecord: 3.2ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSaleLog Load (0.3ms)[0m  [1m[34mSELECT  "sale_logs".* FROM "sale_logs" WHERE "sale_logs"."sale_id" = $1 ORDER BY "sale_logs"."id" ASC LIMIT $2[0m  [["sale_id", 164], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Sale title"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-22 04:19:08.158897"], ["updated_at", "2018-10-22 04:19:08.158897"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [7305a662-6f6e-4487-b40f-828109685c3e] Performing SaleLogJob (Job ID: 7305a662-6f6e-4487-b40f-828109685c3e) from Inline(default) with arguments: 165, "contact", "2018-10-22 01:19:08 -0300"
+[ActiveJob] [SaleLogJob] [7305a662-6f6e-4487-b40f-828109685c3e]   [1m[36mSaleLog Load (0.4ms)[0m  [1m[34mSELECT  "sale_logs".* FROM "sale_logs" WHERE "sale_logs"."sale_id" = $1 AND "sale_logs"."status" = $2 LIMIT $3[0m  [["sale_id", 165], ["status", "contact"], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [7305a662-6f6e-4487-b40f-828109685c3e]   [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [7305a662-6f6e-4487-b40f-828109685c3e]   [1m[36mSale Load (0.2ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 165], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [7305a662-6f6e-4487-b40f-828109685c3e]   [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 165], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [7305a662-6f6e-4487-b40f-828109685c3e]   [1m[36mSaleLog Create (0.4ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 165], ["status", "contact"], ["created_at", "2018-10-22 04:19:08"], ["updated_at", "2018-10-22 04:19:08"]]
+[ActiveJob] [SaleLogJob] [7305a662-6f6e-4487-b40f-828109685c3e]   [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [7305a662-6f6e-4487-b40f-828109685c3e] Performed SaleLogJob (Job ID: 7305a662-6f6e-4487-b40f-828109685c3e) from Inline(default) in 5.94ms
+[ActiveJob] Enqueued SaleLogJob (Job ID: 7305a662-6f6e-4487-b40f-828109685c3e) to Inline(default) with arguments: 165, "contact", "2018-10-22 01:19:08 -0300"
+Completed 201 Created in 11ms (Views: 0.1ms | ActiveRecord: 2.9ms)
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"title"=>"Sale title", "client_name"=>"Foo", "value"=>10000}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Sale title"], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sale title"], ["client_name", "Foo"], ["value", 10000], ["created_at", "2018-10-22 04:19:08.175997"], ["updated_at", "2018-10-22 04:19:08.175997"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [1061e3bf-6bc5-4395-b967-0c4582ddecfb] Performing SaleLogJob (Job ID: 1061e3bf-6bc5-4395-b967-0c4582ddecfb) from Inline(default) with arguments: 166, "contact", "2018-10-22 01:19:08 -0300"
+[ActiveJob] [SaleLogJob] [1061e3bf-6bc5-4395-b967-0c4582ddecfb]   [1m[36mSaleLog Load (0.4ms)[0m  [1m[34mSELECT  "sale_logs".* FROM "sale_logs" WHERE "sale_logs"."sale_id" = $1 AND "sale_logs"."status" = $2 LIMIT $3[0m  [["sale_id", 166], ["status", "contact"], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [1061e3bf-6bc5-4395-b967-0c4582ddecfb]   [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [1061e3bf-6bc5-4395-b967-0c4582ddecfb]   [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 166], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [1061e3bf-6bc5-4395-b967-0c4582ddecfb]   [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 166], ["LIMIT", 1]]
+[ActiveJob] [SaleLogJob] [1061e3bf-6bc5-4395-b967-0c4582ddecfb]   [1m[36mSaleLog Create (0.4ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 166], ["status", "contact"], ["created_at", "2018-10-22 04:19:08"], ["updated_at", "2018-10-22 04:19:08"]]
+[ActiveJob] [SaleLogJob] [1061e3bf-6bc5-4395-b967-0c4582ddecfb]   [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[ActiveJob] [SaleLogJob] [1061e3bf-6bc5-4395-b967-0c4582ddecfb] Performed SaleLogJob (Job ID: 1061e3bf-6bc5-4395-b967-0c4582ddecfb) from Inline(default) in 6.37ms
+[ActiveJob] Enqueued SaleLogJob (Job ID: 1061e3bf-6bc5-4395-b967-0c4582ddecfb) to Inline(default) with arguments: 166, "contact", "2018-10-22 01:19:08 -0300"
+Completed 201 Created in 11ms (Views: 0.1ms | ActiveRecord: 2.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "sale_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/sales" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#create as HTML
+  Parameters: {"sale"=>{"value"=>-1, "title"=>"Title"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "sales"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/sales" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#index as HTML
+  Parameters: {"sale"=>{}}
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/sales" for 127.0.0.1 at 2018-10-22 01:19:08 -0300
+Processing by API::SalesController#index as HTML
+  Parameters: {"sale"=>{}}
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT "sales".* FROM "sales"[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Porro ab et."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Porro ab et."], ["client_name", "Schmidt LLC"], ["value", 2605764], ["created_at", "2018-10-22 04:19:08.239221"], ["updated_at", "2018-10-22 04:19:08.239221"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 167], ["LIMIT", 1]]
+  [1m[36mSaleLog Create (0.3ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 167], ["status", "contact"], ["created_at", "2018-10-22 04:19:08.242659"], ["updated_at", "2018-10-22 04:19:08.242659"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Load (0.3ms)[0m  [1m[34mSELECT  "sale_logs".* FROM "sale_logs" WHERE "sale_logs"."sale_id" = $1 AND "sale_logs"."status" = $2 LIMIT $3[0m  [["sale_id", 167], ["status", "contact"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "sale_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Dignissimos sit dolores."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Dignissimos sit dolores."], ["client_name", "Renner-Yost"], ["value", 8637657], ["created_at", "2018-10-22 04:19:08.250253"], ["updated_at", "2018-10-22 04:19:08.250253"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Load (0.3ms)[0m  [1m[34mSELECT  "sale_logs".* FROM "sale_logs" WHERE "sale_logs"."sale_id" = $1 AND "sale_logs"."status" = $2 LIMIT $3[0m  [["sale_id", 168], ["status", "contact"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Load (0.2ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 168], ["LIMIT", 1]]
+  [1m[36mSaleLog Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 168], ["LIMIT", 1]]
+  [1m[36mSaleLog Create (0.3ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 168], ["status", "contact"], ["created_at", "2011-01-14 17:00:00"], ["updated_at", "2011-01-14 17:00:00"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "sale_logs"[0m
+  [1m[36mSaleLog Load (0.3ms)[0m  [1m[34mSELECT  "sale_logs".* FROM "sale_logs" WHERE "sale_logs"."sale_id" = $1 ORDER BY "sale_logs"."id" DESC LIMIT $2[0m  [["sale_id", 168], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Soluta reprehenderit magnam."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Soluta reprehenderit magnam."], ["client_name", "Lynch, Erdman and Lemke"], ["value", 7833245], ["status", "follow_up"], ["created_at", "2018-10-22 04:19:08.268813"], ["updated_at", "2018-10-22 04:19:08.268813"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Velit voluptatem error."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Velit voluptatem error."], ["client_name", "Buckridge-Lowe"], ["value", 5993069], ["status", "won"], ["created_at", "2018-10-22 04:19:08.272660"], ["updated_at", "2018-10-22 04:19:08.272660"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Soluta reprehenderit magnam."], ["id", 169], ["LIMIT", 1]]
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Velit voluptatem error."], ["id", 170], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Dolorem et ut."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Dolorem et ut."], ["client_name", "Strosin LLC"], ["value", 3575408], ["created_at", "2018-10-22 04:19:08.280888"], ["updated_at", "2018-10-22 04:19:08.280888"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Dolorem et ut."], ["id", 171], ["LIMIT", 1]]
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Dolorem et ut."], ["id", 171], ["LIMIT", 1]]
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Dolorem et ut."], ["id", 171], ["LIMIT", 1]]
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Dolorem et ut."], ["id", 171], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Quo expedita debitis."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.5ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Quo expedita debitis."], ["client_name", "Murphy-O'Reilly"], ["value", 7379045], ["created_at", "2018-10-22 04:19:08.294389"], ["updated_at", "2018-10-22 04:19:08.294389"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Quo expedita debitis."], ["id", 172], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Veritatis sunt omnis."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Veritatis sunt omnis."], ["client_name", "Breitenberg Inc"], ["value", 3432746], ["created_at", "2018-10-22 04:19:08.303502"], ["updated_at", "2018-10-22 04:19:08.303502"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" IS NULL AND "sales"."id" != $1 LIMIT $2[0m  [["id", 173], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Cum harum voluptas."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Cum harum voluptas."], ["client_name", "Doyle Group"], ["value", 8278360], ["created_at", "2018-10-22 04:19:08.312651"], ["updated_at", "2018-10-22 04:19:08.312651"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" ORDER BY "sales"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Cum harum voluptas."], ["LIMIT", 1]]
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "cUM HARUM VOLUPTAS."], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Voluptatem labore unde."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Voluptatem labore unde."], ["client_name", "Christiansen-Hoppe"], ["value", 7008121], ["created_at", "2018-10-22 04:19:08.324064"], ["updated_at", "2018-10-22 04:19:08.324064"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 AND "sales"."id" != $2 LIMIT $3[0m  [["title", "Voluptatem labore unde."], ["id", 175], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Quae ut corporis."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.4ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Quae ut corporis."], ["client_name", "Schowalter-Feil"], ["value", 6240821], ["created_at", "2018-10-22 04:19:08.333501"], ["updated_at", "2018-10-22 04:19:08.333501"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 176], ["LIMIT", 1]]
+  [1m[36mSaleLog Create (0.5ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 176], ["status", "contact"], ["created_at", "2018-10-22 04:19:08.336872"], ["updated_at", "2018-10-22 04:19:08.336872"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" IS NULL AND "sale_logs"."id" != $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["id", 67], ["sale_id", 176], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSale Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sales" WHERE "sales"."title" = $1 LIMIT $2[0m  [["title", "Voluptate ex architecto."], ["LIMIT", 1]]
+  [1m[36mSale Create (0.3ms)[0m  [1m[32mINSERT INTO "sales" ("title", "client_name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Voluptate ex architecto."], ["client_name", "Rippin, Kris and Runte"], ["value", 3092642], ["created_at", "2018-10-22 04:19:08.345095"], ["updated_at", "2018-10-22 04:19:08.345095"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 177], ["LIMIT", 1]]
+  [1m[36mSaleLog Create (0.4ms)[0m  [1m[32mINSERT INTO "sale_logs" ("sale_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sale_id", 177], ["status", "contact"], ["created_at", "2018-10-22 04:19:08.348074"], ["updated_at", "2018-10-22 04:19:08.348074"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSaleLog Load (0.3ms)[0m  [1m[34mSELECT  "sale_logs".* FROM "sale_logs" ORDER BY "sale_logs"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSale Load (0.3ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 177], ["LIMIT", 1]]
+  [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 177], ["LIMIT", 1]]
+  [1m[36mSaleLog Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "CONTACT"], ["sale_id", 177], ["LIMIT", 1]]
+  [1m[36mSaleLog Load (0.2ms)[0m  [1m[34mSELECT "sale_logs".* FROM "sale_logs"[0m
+  [1m[36mSale Load (0.2ms)[0m  [1m[34mSELECT  "sales".* FROM "sales" WHERE "sales"."id" = $1 LIMIT $2[0m  [["id", 178], ["LIMIT", 1]]
+  [1m[36mSaleLog Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "sale_logs" WHERE "sale_logs"."status" = $1 AND "sale_logs"."sale_id" = $2 LIMIT $3[0m  [["status", "contact"], ["sale_id", 178], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] Enqueued SaleLogJob (Job ID: 06ea49c9-b4cf-4fba-a6bc-87ad99426ac3) to Test(default) with arguments: 1, "won", "2011-01-14 15:00:00 -0200"
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
