@@ -1,9 +1,8 @@
 class Board extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      sales: []
-    }
+    this.state = { sales: [] }
+    this.handleDrop = this.handleDrop.bind(this)
   }
 
   componentDidMount() {
@@ -33,7 +32,26 @@ class Board extends React.Component {
       <Column
         name={columnName} column_class={columnClass}
         sales={this.state.sales.filter((sale) => sale.status === status)}
+        status={status}
+        handleDrop = {this.handleDrop}
       />
     )
+  }
+
+  handleDrop(id, status) {
+    fetch(`api/sales/${id}.json`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ sale: { status: status } })
+    })
+      .then((response) => { return response.json() })
+      .then((sale) => this.updateSale(sale))
+  }
+
+  updateSale(sale) {
+    sales = this.state.sales.filter((s) => s.id !== sale.id)
+    sales.push(sale)
+
+    this.setState({ sales: sales })
   }
 }
