@@ -1,8 +1,9 @@
 class Board extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { sales: [] }
+    this.state = { sales: [], renderNewSale: false }
     this.handleDrop = this.handleDrop.bind(this)
+    this.handleNewSaleButtonClick = this.handleNewSaleButtonClick.bind(this)
   }
 
   componentDidMount() {
@@ -14,26 +15,32 @@ class Board extends React.Component {
   render() {
     return(
       <div>
-        <NewSaleButton />
+        <NewSaleButton handleNewSaleButtonClick={this.handleNewSaleButtonClick}/>
         <div className={"columnContainer"}>
-          {this.boardColumn("Contato", "contact")}
-          {this.boardColumn("Envio de proposta", "proposal_submission")}
-          {this.boardColumn("Follow-up", "follow_up")}
-          {this.boardColumn("Fechamento", "closing")}
-          {this.boardColumn("Ganhos", "won", "columnGreen")}
-          {this.boardColumn("Perdidos", "lost", "columnRed")}
+          {this.boardColumn({ name: "Contato", status: "contact", newSaleRenderer: true })}
+          {this.boardColumn({ name: "Envio de proposta", status: "proposal_submission" })}
+          {this.boardColumn({ name: "Follow-up", status: "follow_up" })}
+          {this.boardColumn({ name: "Fechamento", status: "closing" })}
+          {this.boardColumn({ name: "Ganhos", status: "won", columnClass: "columnGreen" })}
+          {this.boardColumn({ name: "Perdidos", status: "lost", columnClass: "columnRed" })}
         </div>
       </div>
     )
   }
 
-  boardColumn(columnName, status, columnClass = "") {
+  handleNewSaleButtonClick() {
+    this.setState({ renderNewSale: true })
+  }
+
+  boardColumn(attrs) {
     return(
       <Column
-        name={columnName} column_class={columnClass}
-        sales={this.state.sales.filter((sale) => sale.status === status)}
-        status={status}
-        handleDrop = {this.handleDrop}
+        name={attrs.name} column_class={attrs.columnClass || ""}
+        sales={this.state.sales.filter((sale) => sale.status === attrs.status)}
+        handleDrop={this.handleDrop}
+        status={attrs.status}
+        newSaleRenderer={attrs.newSaleRenderer}
+        renderNewSale={this.state.renderNewSale}
       />
     )
   }

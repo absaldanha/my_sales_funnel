@@ -93,7 +93,6 @@
   background-color: white;
   border-radius: 5px;
   margin-top: 5px;
-  display: flow-root;
   color: dimgray;
 }
 
@@ -119,7 +118,56 @@
 
 .sale .saleValue {
   color: green;
-  float: right;
+  text-align: right;
   padding: 7px;
   font-size: 12px;
+}
+
+.newSale {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flow-root;
+  color: dimgray;
+}
+
+.newSale .newSaleTitle {
+  font-size: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+}
+
+.newSale .newSaleTitle input {
+  border-color: transparent;
+  padding: 0;
+}
+
+.newSale .newSaleClient {
+  font-size: 14px;
+  padding-left: 8px;
+  padding-top: 6px;
+}
+
+.newSale .newSaleClient img {
+  height: 15px;
+  width: 15px;
+  padding-right: 5px;
+}
+
+.newSale .newSaleClient input {
+  width: 70%;
+  border-color: transparent;
+  padding: 0;
+}
+
+.newSale .newSaleValue {
+  padding: 7px;
+  font-size: 12px;
+}
+
+.newSale .newSaleValue input {
+  padding: 0;
+  border-color: transparent;
+  text-align: right;
 }

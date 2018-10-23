@@ -1,0 +1,22 @@
+class NewSale extends React.Component {
+  render() {
+    let formFields = {}
+
+    return(
+      <div className={"newSale"}>
+        <form>
+          <div className={"newSaleTitle"}>
+            <input ref={input => formFields.title = input} placeholder="Título do negócio" />
+          </div>
+          <div className={"newSaleClient"}>
+            <%= image_tag("company_image.png") %>
+            <input ref={input => formFields.client_name = input} placeholder="Nome do cliente" />
+          </div>
+          <div className={"newSaleValue"}>
+            <input ref={input => formFields.value = input} placeholder="R$ 0,00" />
+          </div>
+        </form>
+      </div>
+    )
+  }
+}

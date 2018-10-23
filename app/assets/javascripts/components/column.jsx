@@ -1,8 +1,10 @@
 class Column extends React.Component {
   constructor(props) {
     super(props);
+    this.newSaleRenderer = props.newSaleRenderer || false
     this.status = props.status
     this.handleDrop = this.handleDrop.bind(this)
+    this.renderNewSale = this.renderNewSale.bind(this)
   }
 
   render() {
@@ -15,15 +17,22 @@ class Column extends React.Component {
           <div className={"totalValue"}>{this.totalValue()}</div>
           <div className={"totalSales"}>{this.totalSales()}</div>
         </div>
+        {this.renderNewSale()}
         {this.props.sales.map((sale) => {
         return(
-          <div key={sale.id} draggable="true" data-status={this.status} data-id={sale.id} onDragStart={this.handleDragStart} >
+          <div key={sale.id} >
             <Sale sale={sale} />
           </div>
         )
       })}
       </div>
     )
+  }
+
+  renderNewSale() {
+    if (this.newSaleRenderer && this.props.renderNewSale) {
+      return(<NewSale />)
+    }
   }
 
   totalValue() {
@@ -41,13 +50,6 @@ class Column extends React.Component {
     }
 
     return(`${count} ${sales}`)
-  }
-
-  handleDragStart(event) {
-    id = event.target.getAttribute("data-id")
-    status = event.target.getAttribute("data-status")
-
-    event.dataTransfer.setData("saleData", JSON.stringify({ id: id, status: status }))
   }
 
   handleDragOver(event) {
