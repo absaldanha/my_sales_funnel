@@ -21,6 +21,35 @@
   padding-top: 10px;
 }
 
+.notificationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notificationContainer .notification {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.notificationContainer .notice {
+  background-color: lightgreen;
+}
+
+.notificationContainer .error {
+  background-color: indianred;
+}
+
+.notificationContainer .notification button {
+  background-color: transparent;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+
 .button {
   border-radius: 6px;
   background-color: #2495E0;
@@ -134,12 +163,21 @@
 }
 
 .newSale input {
- border-color: transparent;
- padding: 0;
- width: 0;
- flex: 1;
- font-style: italic;
- font-size: inherit;
+  border-color: transparent;
+  padding: 0;
+  width: 0;
+  flex: 1;
+  font-style: italic;
+  font-size: inherit;
+}
+
+input {
+  outline: none;
+}
+
+input.error {
+  border-bottom-color: red;
+  border-width: thin;
 }
 
 ::placeholder {

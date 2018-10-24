@@ -11,7 +11,10 @@ class Board extends React.Component {
   componentDidMount() {
     fetch("/api/sales.json")
       .then((response) => { return response.json() })
-      .then((data) => { this.setState({ sales: data }) });
+      .then((data) => { this.setState({ sales: data }) })
+      .catch((error) => {
+        this.props.handleNotification("error", "Houve um problema na recuperação dos negócios")
+      });
   }
 
   render() {
@@ -24,7 +27,7 @@ class Board extends React.Component {
           {this.boardColumn({ name: "Follow-up", status: "follow_up" })}
           {this.boardColumn({ name: "Fechamento", status: "closing" })}
           {this.boardColumn({ name: "Ganhos", status: "won", columnClass: "columnGreen" })}
-          {this.boardColumn({ name: "Perdidos", status: "lost", columnClass: "columnRed" })}
+          {this.boardColumn({ name: "Perdidos", status: "lost", columnClass: "columnRed", rejectStatuses: [] })}
         </div>
       </div>
     )
@@ -58,6 +61,8 @@ class Board extends React.Component {
         sales={this.state.sales.filter((sale) => sale.status === attrs.status)}
         handleDrop={this.handleDrop}
         status={attrs.status}
+        rejectStatuses={attrs.rejectStatuses || ["won"]}
+        handleNotification={this.props.handleNotification}
         newSaleRenderer={attrs.newSaleRenderer}
         renderNewSale={this.state.renderNewSale}
         cancelNewSale={this.cancelNewSale}

@@ -1,15 +1,13 @@
 class Column extends React.Component {
   constructor(props) {
     super(props);
-    this.newSaleRenderer = props.newSaleRenderer || false
-    this.status = props.status
-    this.handleDrop = this.handleDrop.bind(this)
+    this.handleSaleDrop = this.handleSaleDrop.bind(this)
     this.renderNewSale = this.renderNewSale.bind(this)
   }
 
   render() {
     return(
-      <div className={`column ${this.props.column_class}`} onDrop={this.handleDrop} onDragOver={this.handleDragOver}>
+      <div className={`column ${this.props.column_class}`} onDrop={this.handleSaleDrop} onDragOver={this.handleDragOver}>
         <div className={"columnName"}>
           <h3>{this.props.name}</h3>
         </div>
@@ -30,7 +28,7 @@ class Column extends React.Component {
   }
 
   renderNewSale() {
-    if (this.newSaleRenderer && this.props.renderNewSale) {
+    if (this.props.newSaleRenderer && this.props.renderNewSale) {
       return(
         <NewSale handleCancelNewSale={this.props.cancelNewSale} handleCreateNewSale={this.props.createNewSale} />
       )
@@ -58,12 +56,20 @@ class Column extends React.Component {
     event.preventDefault();
   }
 
-  handleDrop(event) {
+  handleSaleDrop(event) {
+    event.preventDefault();
     saleData = JSON.parse(event.dataTransfer.getData("saleData"))
 
-    if (saleData.status !== this.status) {
-      event.preventDefault();
-      this.props.handleDrop(saleData.id, this.status)
+    if (saleData.status == this.props.status) { return }
+
+    if (this.props.rejectStatuses.includes(saleData.status)) {
+      this.props.handleNotification(
+        "error",
+        `Um negócio ganho não pode ser movido para ${this.props.name}`
+      )
+      return
     }
+      
+    this.props.handleDrop(saleData.id, this.props.status)
   }
 }

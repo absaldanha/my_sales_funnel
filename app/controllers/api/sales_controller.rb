@@ -2,7 +2,7 @@
 
 module API
   class SalesController < API::ApplicationController
-    include Wisper::Publisher
+    # include Wisper::Publisher
 
     def index
       sales = Sale.all
@@ -13,7 +13,9 @@ module API
       sale = Sale.new(create_params)
 
       if sale.save
-        publish(:sale_status_changed, sale)
+        # FIXME Problema de autoload do listener
+        # publish(:sale_status_changed, sale)
+        SaleLog.create(sale: sale, status: sale.status)
         render json: json_for(sale), status: :created
       else
         render json: errors_for(sale), status: :unprocessable_entity
@@ -24,7 +26,9 @@ module API
       sale = Sale.find(params[:id])
 
       if sale.update(update_params)
-        publish(:sale_status_changed, sale)
+        # FIXME Problema de autoload do listener
+        # publish(:sale_status_changed, sale)
+        SaleLog.create(sale: sale, status: sale.status)
         render json: json_for(sale), status: :ok
       else
         render json: errors_for(sale), status: :unprocessable_entity
