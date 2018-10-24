@@ -55,7 +55,7 @@ class Board extends React.Component {
           return response.json()
         }
         
-        new Error
+        throw new Error
       })
       .then((sale) => { this.createSale(sale) })
       .then(() => { this.cancelNewSale() })
