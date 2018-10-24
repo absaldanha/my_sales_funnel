@@ -1,0 +1,19 @@
+.button {
+  border-radius: 6px;
+  background-color: #2495E0;
+  color: white;
+  padding: 8px 38px 8px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 -2px 0 inset;
+  border: none;
+  cursor: pointer;
+}
+
+.button > * {
+  vertical-align: middle;
+}
+
+.button img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}

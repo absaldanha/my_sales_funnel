@@ -1,0 +1,34 @@
+.sale {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: dimgray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+ 
+.sale .saleTitle {
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+}
+ 
+.sale .client {
+  font-size: 14px;
+  padding-left: 8px;
+  padding-top: 6px;
+}
+ 
+.sale .client img {
+  height: 15px;
+  width: 15px;
+  padding-right: 5px;
+}
+ 
+.sale .saleValue {
+  color: green;
+  text-align: right;
+  padding: 7px;
+  font-size: 12px;
+}

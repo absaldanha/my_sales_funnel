@@ -9,7 +9,7 @@ class Sale extends React.Component {
       <div className={"sale"} onDragStart={this.handleDragStart} draggable="true">
         <div className={"saleTitle"}>{this.props.sale.title}</div>
         <div className={"client"}>
-          <%= image_tag("company_image.png") %>
+          {this.props.children}
           {this.props.sale.client_name}
         </div>
         <div className={"saleValue"}>{this.moneyValue()}</div>

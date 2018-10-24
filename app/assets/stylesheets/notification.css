@@ -1,0 +1,28 @@
+.notificationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notificationContainer .notification {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.notificationContainer .notice {
+  background-color: lightgreen;
+}
+
+.notificationContainer .error {
+  background-color: indianred;
+}
+
+.notificationContainer .notification button {
+  background-color: transparent;
+  border: none;
+  float: right;
+  cursor: pointer;
+}

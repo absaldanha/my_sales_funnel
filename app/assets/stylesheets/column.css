@@ -1,0 +1,52 @@
+.columnContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 0 0 220px;
+  margin-right: 5px;
+}
+
+.column h3, h4 {
+  margin: 0;
+}
+
+.column .columnName {
+  background-color: #6178A8;
+  color: white;
+  padding: 10px;
+  font-style: italic;
+}
+
+.column .columnStats {
+  background-color: #556992;
+  color: white;
+  padding: 8px;
+}
+
+.column .columnStats .totalValue {
+  display: inline-block;
+  font-style: italic;
+}
+
+.column .columnStats .totalSales {
+  float: right;
+}
+
+.columnGreen .columnName {
+  background-color: #53B55D;
+}
+
+.columnGreen .columnStats {
+  background-color: #459D52;
+}
+
+.columnRed .columnName {
+  background-color: #AF5659;
+}
+
+.columnRed .columnStats {
+  background-color: #904143;
+}

@@ -13,7 +13,7 @@ module API
       sale = Sale.new(create_params)
 
       if sale.save
-        # FIXME Problema de autoload do listener
+        # FIXME: Problema de autoload do listener
         # publish(:sale_status_changed, sale)
         SaleLog.create(sale: sale, status: sale.status)
         render json: json_for(sale), status: :created
@@ -26,7 +26,7 @@ module API
       sale = Sale.find(params[:id])
 
       if sale.update(update_params)
-        # FIXME Problema de autoload do listener
+        # FIXME: Problema de autoload do listener
         # publish(:sale_status_changed, sale)
         SaleLog.create(sale: sale, status: sale.status)
         render json: json_for(sale), status: :ok

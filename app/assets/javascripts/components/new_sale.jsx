@@ -7,7 +7,7 @@ class NewSale extends React.Component {
       valueValid: undefined
     }
     this.handleFormSubmit = this.handleFormSubmit.bind(this)
-    this.validateForm = this.validateForm.bind(this)
+    this.validateNewSale = this.validateNewSale.bind(this)
     this.inputClass = this.inputClass.bind(this)
   }
 
@@ -20,14 +20,14 @@ class NewSale extends React.Component {
           <div className={"saleTitle"}>
             <input className={this.inputClass("title")} ref={input => formFields.title = input} placeholder="Título do negócio" autoFocus />
             <button input="submit" className={"iconButton"}>
-              <%= image_tag("check.png", alt: "check") %>
+              <CheckImage />
             </button>
             <button className={"iconButton"} onClick={this.props.handleCancelNewSale}>
-              <%= image_tag("cancel.png") %>
+              <CancelImage />
             </button>
           </div>
           <div className={"client"}>
-            <%= image_tag("company_image.png") %>
+            <CompanyImage />
             <input className={this.inputClass("clientName")} ref={input => formFields.clientName = input} placeholder="Nome do cliente" />
           </div>
           <div className={"saleValue"}>
@@ -47,7 +47,7 @@ class NewSale extends React.Component {
   handleFormSubmit(event, form) {
     event.preventDefault();
 
-    if (this.validateForm(form)) {
+    if (this.validateNewSale(form)) {
       this.props.handleCreateNewSale(
         form.title.value,
         form.clientName.value,
@@ -56,7 +56,7 @@ class NewSale extends React.Component {
     }
   }
 
-  validateForm(form) {
+  validateNewSale(form) {
     let validations = {}
 
     validations.titleValid = form.title.value.trim() !== ""

@@ -7,7 +7,7 @@ class Column extends React.Component {
 
   render() {
     return(
-      <div className={`column ${this.props.column_class}`} onDrop={this.handleSaleDrop} onDragOver={this.handleDragOver}>
+      <div className={`column ${this.props.columnClass}`} onDrop={this.handleSaleDrop} onDragOver={this.handleDragOver}>
         <div className={"columnName"}>
           <h3>{this.props.name}</h3>
         </div>
@@ -19,7 +19,9 @@ class Column extends React.Component {
         {this.props.sales.map((sale) => {
         return(
           <div key={sale.id} >
-            <Sale sale={sale} />
+            <Sale sale={sale}>
+              <CompanyImage />
+            </Sale>
           </div>
         )
       })}
@@ -30,7 +32,10 @@ class Column extends React.Component {
   renderNewSale() {
     if (this.props.newSaleRenderer && this.props.renderNewSale) {
       return(
-        <NewSale handleCancelNewSale={this.props.cancelNewSale} handleCreateNewSale={this.props.createNewSale} />
+        <NewSale
+          handleCancelNewSale={this.props.handleCancelNewSale}
+          handleCreateNewSale={this.props.handleCreateNewSale}
+        />
       )
     }
   }
@@ -70,6 +75,6 @@ class Column extends React.Component {
       return
     }
       
-    this.props.handleDrop(saleData.id, this.props.status)
+    this.props.handleDropOnColumn(saleData.id, this.props.status)
   }
 }
