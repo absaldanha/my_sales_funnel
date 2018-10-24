@@ -50,9 +50,16 @@ class Board extends React.Component {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ sale: { title: title, client_name: clientName, value: value } })
     })
-      .then((response) => { return response.json() })
-      .then((sale) => this.createSale(sale))
-      .then(() => this.setState({ renderNewSale: false }))
+      .then((response) => {
+        if (response.ok) {
+          return response.json()
+        }
+        
+        new Error
+      })
+      .then((sale) => { this.createSale(sale) })
+      .then(() => { this.cancelNewSale() })
+      .catch(() => { this.props.handleNotification("error", "Erro ao criar novo negócio") });
   }
 
   createSale(sale) {
