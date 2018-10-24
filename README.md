@@ -6,6 +6,18 @@ Essa é uma pequena aplicação para o gerenciamento de negócios em seus difere
 
 O projeto tem por objetivo atender os seguintes objetivos:
 
+Histórias:
+```
+Como um vendedor
+Posso criar um negócio no meu funil de vendas
+Para organizar o meu processo comercial
+
+Como um vendedor
+Posso evoluir um negócio de etapa no funil
+Para organizar o meu processo comercial
+```
+
+Regras
 - Quando um negócio for ganho, ele não pode mudar de etapa, mas pode ser perdido.
 - Um negócio pode ser perdido em qualquer etapa
 - Toda vez que uma ação inválida for executada, o usuário deve ser notificado
