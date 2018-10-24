@@ -10,10 +10,10 @@ module API
     end
 
     def create
-      sale = Sale.new(sale_params)
+      sale = Sale.new(create_params)
 
       if sale.save
-        publish(:sale_modified, sale)
+        publish(:sale_status_changed, sale)
         render json: json_for(sale), status: :created
       else
         render json: errors_for(sale), status: :unprocessable_entity
@@ -23,8 +23,8 @@ module API
     def update
       sale = Sale.find(params[:id])
 
-      if sale.update(sale_params)
-        # broadcast(:sale_modified, sale)
+      if sale.update(update_params)
+        publish(:sale_status_changed, sale)
         render json: json_for(sale), status: :ok
       else
         render json: errors_for(sale), status: :unprocessable_entity
@@ -33,8 +33,12 @@ module API
 
     private
 
-    def sale_params
-      params.require(:sale).permit(:title, :client_name, :value, :status)
+    def create_params
+      params.require(:sale).permit(:title, :client_name, :value)
+    end
+
+    def update_params
+      params.require(:sale).permit(:status)
     end
 
     def json_for(sale)

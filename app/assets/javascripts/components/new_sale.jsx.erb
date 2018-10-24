@@ -3,20 +3,36 @@ class NewSale extends React.Component {
     let formFields = {}
 
     return(
-      <div className={"newSale"}>
-        <form>
-          <div className={"newSaleTitle"}>
-            <input ref={input => formFields.title = input} placeholder="Título do negócio" />
+      <div className={"sale newSale"}>
+        <form onSubmit={(e) => this.handleCreateNewSale(e, formFields)}>
+          <div className={"saleTitle"}>
+            <input ref={input => formFields.title = input} placeholder="Título do negócio" autoFocus />
+            <button input="submit" className={"iconButton"}>
+              <%= image_tag("check.png") %>
+            </button>
+            <button className={"iconButton"} onClick={this.props.handleCancelNewSale}>
+              <%= image_tag("cancel.png") %>
+            </button>
           </div>
-          <div className={"newSaleClient"}>
+          <div className={"client"}>
             <%= image_tag("company_image.png") %>
             <input ref={input => formFields.client_name = input} placeholder="Nome do cliente" />
           </div>
-          <div className={"newSaleValue"}>
+          <div className={"saleValue"}>
             <input ref={input => formFields.value = input} placeholder="R$ 0,00" />
           </div>
         </form>
       </div>
+    )
+  }
+
+  handleCreateNewSale(event, form) {
+    event.preventDefault();
+
+    this.props.handleCreateNewSale(
+      form.title.value,
+      form.client_name.value,
+      form.value.value
     )
   }
 }

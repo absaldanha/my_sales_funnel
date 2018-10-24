@@ -31,5 +31,4 @@ group :test do
   gem "rubocop", "~> 0.59"
   gem "shoulda-matchers", "~> 3.1"
   gem "simplecov", "~> 0.16"
-  gem "timecop", "~> 0.9"
 end

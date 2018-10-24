@@ -84,7 +84,7 @@ RSpec.describe "Sales API" do
   describe "PATCH /api/sales/:id" do
     context "when updated successfully" do
       let(:correct_params) do
-        Hash[sale: { title: "Other Title", value: 200_00 }].to_json
+        Hash[sale: { status: "won" }].to_json
       end
 
       let!(:sale) { create(:sale, title: "Title", client_name: "Client", value: 100_00) }
@@ -109,24 +109,24 @@ RSpec.describe "Sales API" do
           headers: { "Content-Type" => "application/json" }
 
         expect(Sale.first).to have_attributes(
-          title: "Other Title", value: 200_00, status: "contact", client_name: "Client"
+          title: "Title", value: 100_00, status: "won", client_name: "Client"
         )
       end
 
-      it "creates a new log if status was updated" do
+      it "creates a new sale log" do
         patch "/api/sales/#{sale.id}", params: correct_params,
           headers: { "Content-Type" => "application/json" }
 
-        expect(sale.logs.count).to eq 1
+        expect(sale.logs.count).to eq 2
       end
     end
 
     context "when updated unsuccessfully" do
       let(:incorrect_params) do
-        Hash[sale: { title: "", value: -1 }].to_json
+        Hash[sale: { status: "contact" }].to_json
       end
 
-      let!(:sale) { create(:sale, title: "Title", client_name: "Client", value: 100_00) }
+      let!(:sale) { create(:sale, :won) }
 
       it "responds with a 422 HTTP status" do
         patch "/api/sales/#{sale.id}", params: incorrect_params,
@@ -146,9 +146,7 @@ RSpec.describe "Sales API" do
         patch "/api/sales/#{sale.id}", params: incorrect_params,
           headers: { "Content-Type" => "application/json" }
 
-        expect(Sale.first).to have_attributes(
-          title: "Title", client_name: "Client", value: 100_00
-        )
+        expect(Sale.first).to have_attributes(status: "won")
       end
     end
   end

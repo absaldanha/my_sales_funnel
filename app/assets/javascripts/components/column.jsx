@@ -31,7 +31,9 @@ class Column extends React.Component {
 
   renderNewSale() {
     if (this.newSaleRenderer && this.props.renderNewSale) {
-      return(<NewSale />)
+      return(
+        <NewSale handleCancelNewSale={this.props.cancelNewSale} handleCreateNewSale={this.props.createNewSale} />
+      )
     }
   }
 

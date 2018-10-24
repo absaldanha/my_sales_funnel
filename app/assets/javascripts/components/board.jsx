@@ -4,6 +4,8 @@ class Board extends React.Component {
     this.state = { sales: [], renderNewSale: false }
     this.handleDrop = this.handleDrop.bind(this)
     this.handleNewSaleButtonClick = this.handleNewSaleButtonClick.bind(this)
+    this.cancelNewSale = this.cancelNewSale.bind(this)
+    this.createNewSale = this.createNewSale.bind(this)
   }
 
   componentDidMount() {
@@ -32,6 +34,23 @@ class Board extends React.Component {
     this.setState({ renderNewSale: true })
   }
 
+  cancelNewSale() {
+    this.setState({ renderNewSale: false })
+  }
+
+  createNewSale(title, client_name, value) {
+    body = 
+
+    fetch("/api/sales.json", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ sale: { title: title, client_name: client_name, value: value } })
+    })
+      .then((response) => { return response.json() })
+      .then((sale) => this.createSale(sale))
+      .then(() => this.setState({ renderNewSale: false }))
+  }
+
   boardColumn(attrs) {
     return(
       <Column
@@ -41,6 +60,8 @@ class Board extends React.Component {
         status={attrs.status}
         newSaleRenderer={attrs.newSaleRenderer}
         renderNewSale={this.state.renderNewSale}
+        cancelNewSale={this.cancelNewSale}
+        createNewSale={this.createNewSale}
       />
     )
   }
@@ -58,6 +79,13 @@ class Board extends React.Component {
   updateSale(sale) {
     sales = this.state.sales.filter((s) => s.id !== sale.id)
     sales.push(sale)
+
+    this.setState({ sales: sales })
+  }
+
+  createSale(sale) {
+    sales = this.state.sales
+    sales.unshift(sale)
 
     this.setState({ sales: sales })
   }
