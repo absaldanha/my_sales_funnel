@@ -4,8 +4,10 @@
  
 .newSale input {
   border-color: transparent;
+  border-width: thin;
   padding: 0;
   width: 0;
+  min-width: 0;
   flex: 1;
   font-style: italic;
   font-size: inherit;
@@ -17,15 +19,19 @@ input {
  
 input.error {
   border-bottom-color: red;
-  border-width: thin;
 }
  
 ::placeholder {
   opacity: 0.5;
 }
+
+.newSale .saleValue {
+  justify-content: flex-end;
+}
  
 .newSale .saleValue input {
   text-align: right;
+  flex: 0 0 25%;
 }
  
 .iconButton {
