@@ -8,7 +8,7 @@ class NewSale extends React.Component {
           <div className={"saleTitle"}>
             <input ref={input => formFields.title = input} placeholder="Título do negócio" autoFocus />
             <button input="submit" className={"iconButton"}>
-              <%= image_tag("check.png") %>
+              <%= image_tag("check.png", alt: "check") %>
             </button>
             <button className={"iconButton"} onClick={this.props.handleCancelNewSale}>
               <%= image_tag("cancel.png") %>

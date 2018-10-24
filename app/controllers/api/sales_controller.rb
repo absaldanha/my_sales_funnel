@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module API
-  class SalesController < ApplicationController
+  class SalesController < API::ApplicationController
     include Wisper::Publisher
 
     def index

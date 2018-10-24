@@ -7,6 +7,7 @@ if ENV["COVERAGE"]
     minimum_coverage 95
 
     add_group "Validators", "app/validators"
+    add_group "Listeners", "app/listeners"
   end
 end
 

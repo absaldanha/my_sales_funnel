@@ -23,12 +23,15 @@ group :development do
 end
 
 group :test do
+  gem "capybara", "~> 3.10"
+  gem "capybara-screenshot", "~> 1.0"
   gem "database_cleaner", "~> 1.7"
   gem "factory_bot_rails", "~> 4.11"
   gem "faker", "~> 1.9"
   gem "json-schema", "~> 2.8"
   gem "rspec-rails", "~> 3.8"
   gem "rubocop", "~> 0.59"
+  gem "selenium-webdriver", "~> 3.14"
   gem "shoulda-matchers", "~> 3.1"
   gem "simplecov", "~> 0.16"
 end
